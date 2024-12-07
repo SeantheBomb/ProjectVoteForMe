@@ -21,6 +21,7 @@ MonoBehaviour:
   sentiment:
     positive: "A\r"
     negative: "D\r"
+    intro: Hello world! My name is blank, you hear?
   proposals:
   - positive: "A\r"
     negative: "D\r"

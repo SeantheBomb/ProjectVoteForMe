@@ -32,6 +32,11 @@ public class CitizenBio
 public class CitizenSentiment
 {
     public string positive, negative;
+
+    [TextArea]
+    public string intro;
+
+    public int startingOpinion;
 }
 
 

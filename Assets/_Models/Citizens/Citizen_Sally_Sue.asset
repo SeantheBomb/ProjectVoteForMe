@@ -19,8 +19,10 @@ MonoBehaviour:
     description: "Nurse Hat and scrubs, Blonde Hair. \r"
     dossier: "Nurse at a retirement home.\r"
   sentiment:
-    positive: "Profesional\r"
+    positive: "Professional\r"
     negative: "Humerous\r"
+    intro: Oh, hi there. What can I help you with?
+    startingOpinion: 0
   proposals:
   - positive: "Straightforward\r"
     negative: "Headliner\r"
@@ -39,8 +41,8 @@ MonoBehaviour:
       \r"
     minusTwo: "Do you think this is a joke? Our city NEEDS better healthcare, and
       you\u2019re joking around?\r"
-  - positive: "Rich More\r"
-    negative: "Same\r"
+  - positive: "Rich Raise\r"
+    negative: "Tax Same\r"
     plusOne: "Sounds about right to me.\r"
     plusTwo: "I\u2019m glad to see minds like yours running for office. Lets do it!\r"
     zero: "Are you done yet?\r"

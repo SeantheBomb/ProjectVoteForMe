@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e7c057fec8818f438a750285d2c6af1, type: 3}
+  m_Name: PlayerCanvas
+  m_EditorClassIdentifier: 
+  portrait: 
+  money: 3
+  proposals:
+  - {fileID: 11400000, guid: 2a665155f9b220b42a62f8de594e75ec, type: 2}
+  - {fileID: 11400000, guid: 180f5de16063e054f8136c79face5132, type: 2}
+  - {fileID: 11400000, guid: c7423a5bfc2fe3746a27b7e58823ff62, type: 2}
+  - {fileID: 11400000, guid: 3b6522456f70df540ba63bae96768943, type: 2}
