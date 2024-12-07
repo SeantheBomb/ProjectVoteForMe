@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b125e8da112423439dd8f6d6f03a61c, type: 3}
+  m_Name: Citizen_Conner_Stone
+  m_EditorClassIdentifier: 
+  bio:
+    name: "Conner Stone\r"
+    portrait: "\r"
+    avater: "\r"
+    description: "Beanie, long hair, cyberpunk red LEDs across eyes\r"
+    dossier: "Slow witted stoner. \r"
+  sentiment:
+    positive: "Humerous\r"
+    negative: "Intimidating\r"
+  proposals:
+  - positive: "Headliner\r"
+    negative: "Straightforward\r"
+    plusOne: "Cool man, yeah, legalize it bro. \r"
+    plusTwo: "Woah no way man! You mean like... I get to vote? That's crazy!\r"
+    zero: "Fine man, I have a minute but like... not too long because I got taquitos
+      in the oven. \r"
+    minusOne: "What? Wait, slow down man like... who are you? Are you selling cookies
+      or something?\r"
+    minusTwo: "Hey chill out man. That is not a very cash money way to go about doing
+      your business, you know what I mean?\r"
+  - positive: "Mall\r"
+    negative: "Prison\r"
+    plusOne: "Yeah, man. That's awesome, bro, a Mall would be pretty Rad. \r"
+    plusTwo: "Far out, Dude! I've always wanted to go to a Mall! It's like... instead
+      of stuff getting delivered to me, I get delivered to the stuff, man!\r"
+    zero: "Sure dude, anything else?\r"
+    minusOne: "Come on, man. Can't we think of something more like... fun?\r"
+    minusTwo: "Woah, man. Are you like, with the Cops? Because I don't have anything
+      that's not medicinal. \r"
+  - positive: "Rich Raise\r"
+    negative: "Everyone Raise\r"
+    plusOne: "Hell yeah, fight the power, brother! But like, if I was ever rich I
+      wouldn't need to pay taxes, right?\r"
+    plusTwo: "Hilarious bro! And like, I get some of those taxes right?\r"
+    zero: "Wait, are you here to collect my taxes? Because I swear I already paid
+      those last year. \r"
+    minusOne: "Look like, I'm not really into the whole paying taxes thing. \r"
+    minusTwo: "You won't get a dime from me! I'm not even sure where I left my money.
+      \r"
+  - positive: "Kind\r"
+    negative: "Smart\r"
+    plusOne: "I like it, dude. Just be nice to people. \r"
+    plusTwo: "Has anyone ever said you have kind eyes? I'll bet there's a good soul
+      in there. \r"
+    zero: "I've got like, important things to do man.\r"
+    minusOne: "Huh? I don't get it. \r"
+    minusTwo: "Hey man lets just all take a breath for a minute. \r"
+  result:
+    Yes: "Sure, man. I'll try out this voting thing!\r"
+    No: Look like, I'd totally vote for you and all but I already made plans to watch
+      TV that day so....

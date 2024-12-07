@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b125e8da112423439dd8f6d6f03a61c, type: 3}
+  m_Name: Citizen_Sally_Sue
+  m_EditorClassIdentifier: 
+  bio:
+    name: "Sally Sue\r"
+    portrait: "\r"
+    avater: "\r"
+    description: "Nurse Hat and scrubs, Blonde Hair. \r"
+    dossier: "Nurse at a retirement home.\r"
+  sentiment:
+    positive: "Profesional\r"
+    negative: "Humerous\r"
+  proposals:
+  - positive: "Straightforward\r"
+    negative: "Headliner\r"
+    plusOne: "Okay, tell me more.\r"
+    plusTwo: "Thank you for visiting me. Please tell me what you stand for!\r"
+    zero: "Sure, I have a second. \r"
+    minusOne: "You better be quick. \r"
+    minusTwo: "Get to the point or get off my doorstep. \r"
+  - positive: "Hospital\r"
+    negative: "Mall\r"
+    plusOne: " A Hospital is just what we need. Good by me.\r"
+    plusTwo: "That\u2019s wonderful to hear! Healthcare should always be in top priority,
+      I always say. \r"
+    zero: "Look, my shift starts soon. Can you get on with it?\r"
+    minusOne: "Oh yeah, just what we need. More places to blow our hard earned money.
+      \r"
+    minusTwo: "Do you think this is a joke? Our city NEEDS better healthcare, and
+      you\u2019re joking around?\r"
+  - positive: "Rich More\r"
+    negative: "Same\r"
+    plusOne: "Sounds about right to me.\r"
+    plusTwo: "I\u2019m glad to see minds like yours running for office. Lets do it!\r"
+    zero: "Are you done yet?\r"
+    minusOne: "Keep things the same? That might be easy to say when you\u2019re sitting
+      so comfortably. \r"
+    minusTwo: "I\u2019m glad you find this so funny. Laugh at the people of this
+      city, and see how far it gets you. \r"
+  - positive: "Smart\r"
+    negative: "Kind\r"
+    plusOne: "Well, you atleast seem smarter than the other guy. \r"
+    plusTwo: "A city like ours needs good brains at the head. Your\u2019s seems up
+      to the task!\r"
+    zero: "Okay, are you done now?\r"
+    minusOne: "Do you plan to hold hands with everyone at city hall and hope for
+      the best?\r"
+    minusTwo: "I\u2019m sure that charming smile of yours will get you plenty of
+      votes, but not mine. \r"
+  result:
+    Yes: "Thank you for stopping by, you can count on my vote!\r"
+    No: "If I\u2019m being honest, I think I\u2019d rather try my luck with the other
+      guy. Goodbye."
