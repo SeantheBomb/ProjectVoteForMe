@@ -31,7 +31,7 @@ public class DisplayDialogController : MonoBehaviour
     {
         IsComplete = false;
         image.transform.position = dialog.isPlayer ? playerPosition.position : citizenPosition.position;
-        image.sprite = GetPortrait(dialog.portrait);
+        image.sprite = PortraitLoader.GetPortrait(dialog.portrait);
         header.text = dialog.title;
         gameObject.SetActive(true);
         StartCoroutine(Display(dialog));
@@ -86,28 +86,28 @@ public class DisplayDialogController : MonoBehaviour
     }
 
 
-    public Sprite GetPortrait(string key)
-    {
-        if(portraits == null)
-        {
-            portraits = new Dictionary<string, Sprite>();
-        }
+//    public Sprite GetPortrait(string key)
+//    {
+//        if(portraits == null)
+//        {
+//            portraits = new Dictionary<string, Sprite>();
+//        }
 
-        if(portraits.ContainsKey(key))
-        {
-            return portraits[key];
-        }
+//        if(portraits.ContainsKey(key))
+//        {
+//            return portraits[key];
+//        }
 
-        Sprite sprite = Resources.Load<Sprite>(key);
-        if(sprite == null)
-        {
-            Debug.LogError($"DisplayDialog: Failed to load portrait {key}");
-            return null;
-        }
+//        Sprite sprite = Resources.Load<Sprite>(key);
+//        if(sprite == null)
+//        {
+//            Debug.LogError($"DisplayDialog: Failed to load portrait {key}");
+//            return null;
+//        }
 
-        portraits.Add(key, sprite);
-        return sprite;
-    }
+//        portraits.Add(key, sprite);
+//        return sprite;
+//    }
 }
 
 

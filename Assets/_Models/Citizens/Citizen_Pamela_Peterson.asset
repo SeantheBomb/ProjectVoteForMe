@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b125e8da112423439dd8f6d6f03a61c, type: 3}
+  m_Name: Citizen_Pamela_Peterson
+  m_EditorClassIdentifier: 
+  bio:
+    name: "Pamela Peterson\r"
+    portrait: "\r"
+    avater: "\r"
+    description: "Old senile woman who thinks the player is her nephew. \r"
+    dossier: "87 Year old woman, retired. No known affiliations. \r"
+  sentiment:
+    positive: "Casual\r"
+    negative: "Intimidation\r"
+    intro: "There you are nephew! I've been waiting all day for you to get here.
+      Please, come in. \r"
+    startingOpinion: 5
+  proposals:
+  - positive: "Straightforward\r"
+    negative: "Deception\r"
+    plusOne: "Wait, but you're still here to fix my wifi, right?\r"
+    plusTwo: "That's wonderful news, Nephew! Why didn't you tell me you were so important?
+      I'm so proud!\r"
+    zero: "What are you on about, nephew? Anyway, can you fix my Wifi?\r"
+    minusOne: "Nephew what's all this nonsense, please come in and make my Wifi work.
+      \r"
+    minusTwo: "Nephew! That is no way to talk to an old woman. Don't make me call
+      your mother!\r"
+  - positive: "Mall\r"
+    negative: "Hospital\r"
+    plusOne: "Oh I didn't know you worked at the shopping mall! Do you get any coupons?\r"
+    plusTwo: "That would be wonderful! You could take me there on Sundays!\r"
+    zero: "Enough chit chat please, come in from the cold. \r"
+    minusOne: "No thank you, I don't want to go to the Hospital. They always make
+      me take those nasty pills. \r"
+    minusTwo: "You can't make me go! I won't go to the Hospital, Nephew! You can
+      leave if you want to talk like that. \r"
+  - positive: "Tax same\r"
+    negative: "Rich Lower\r"
+    plusOne: "No, Nephew, I don't have to pay those taxes anymore. I haven't bothered
+      in decades. \r"
+    plusTwo: "Yes please! I havn't bothered with those taxes in years and would LOVE
+      to keep it that way. \r"
+    zero: "What's that? Did you say you needed some money? Now you know I only give
+      you money on your Birthday and Christmas.\r"
+    minusOne: "I don't know about all of that...\r"
+    minusTwo: "Your father taught you to talk like that, didn't he? I always said
+      he was a bad influence, biggest mistake of your Mom's life. \r"
+  - positive: "Honest\r"
+    negative: "Kind\r"
+    plusOne: "Won't you come in and relax? Why are we talking out here?\r"
+    plusTwo: "I'm so proud of you, my sweet nephew. Won't you visit me more?\r"
+    zero: "Oh, no thank you, Nephew. \r"
+    minusOne: "What was that? Did you say you have kids!? Oh wonderful news!\r"
+    minusTwo: "You will drop that sarcastic tone this instant, young man. \r"
+  result:
+    Yes: "Oh sure, I'd love to go vote with you! Will you pick me up and drive me
+      there? I can't seem to find my license. \r"
+    No: I'm very dissapointed in you, young man. I'll be calling your mother.

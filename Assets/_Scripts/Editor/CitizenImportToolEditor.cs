@@ -155,11 +155,17 @@ public class CitizenImportToolEditor : EditorWindow
             Debug.Log($"CitizenImport: Reached sentiment {tsv[row]}");
             switch (fields[0])
             {
+                case "Intro":
+                    sentiment.intro = fields[1];
+                    break;
                 case "Positive":
                     sentiment.positive = fields[1];
                     break;
                 case "Negative":
                     sentiment.negative = fields[1];
+                    break;
+                case "Start Opinion":
+                    sentiment.startingOpinion = int.Parse(fields[1]);
                     break;
 
             }

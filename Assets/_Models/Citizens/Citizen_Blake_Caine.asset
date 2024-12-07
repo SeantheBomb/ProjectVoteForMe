@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b125e8da112423439dd8f6d6f03a61c, type: 3}
+  m_Name: Citizen_Blake_Caine
+  m_EditorClassIdentifier: 
+  bio:
+    name: "Blake Caine\r"
+    portrait: "\r"
+    avater: "\r"
+    description: "Crypto Nerd\r"
+    dossier: "23 Years Old, multiple outstanding debts.\r"
+  sentiment:
+    positive: "Professional\r"
+    negative: "Casual\r"
+    intro: "If you are here to sell something, be aware I don't use fiat currency
+      anymore. \r"
+    startingOpinion: 2
+  proposals:
+  - positive: "Straightforward\r"
+    negative: "Headliner\r"
+    plusOne: "Okay, yeah sure. While I have you, would you like to invest in this
+      new crypto coin I'm working on?\r"
+    plusTwo: "Oh, you just want my vote? I guess, but the real democracy you should
+      be focused on is the democratization of currency through blockchain. \r"
+    zero: "Well, is that all you're here for? Would you like to hear about a fantastic
+      investment opportunity?\r"
+    minusOne: "That's not important. While I have you, would you like to invest in
+      this new crypto coin I'm working on?\r"
+    minusTwo: "It  seems you only see the surface level of things. Do you really
+      think that will get you far?\r"
+  - positive: "Mall\r"
+    negative: "Prison\r"
+    plusOne: "I'll vote for your mall, but you need to scratch my back. Do you think
+      you could get the stores to accept my coin?\r"
+    plusTwo: "You seem like a smart person. Your exactly the kind of investor I've
+      been looking for. \r"
+    zero: "I really don't think you see what's important. If I was running for Mayor,
+      I'd be focused on fiscal and monitary policy, that's what the people are focued
+      on. \r"
+    minusOne: "First you lock up the currency, then the people. I know how you government
+      types are. \r"
+    minusTwo: "Get out of here. First you lock up the currency, then the people.
+      I know how you government types are. \r"
+  - positive: "Rich Lower\r"
+    negative: "Tax Same\r"
+    plusOne: "Once my coin takes off, I want to keep as much of my gains as possible.
+      I'd vote for more taxes for future me. \r"
+    plusTwo: "I appreciate you looking out for me. Once my coin takes off, I want
+      to keep as much of my gains as possible. \r"
+    zero: "You're talking about taxes, but I want to talk about investments. Specifically
+      yours. \r"
+    minusOne: "No way, the tax code needs to be reformed to be more fair to crypto
+      investments. \r"
+    minusTwo: "I'm sure you'd like that, you could keep your antiquated crypto capital
+      gains taxes in place!\r"
+  - positive: "Smart\r"
+    negative: "Powerful\r"
+    plusOne: "Why don't we go get a beer and talk about how much you are willing
+      to grow your portfolio.\r"
+    plusTwo: "You seem smart enough. Why don't we go get a beer and talk about how
+      much you are willing to grow your portfolio. \r"
+    zero: "Look do you want to talk investments or not? Because I've got plenty of
+      people knocking on my door...\r"
+    minusOne: "So if your so powerful, do you know anyone else who would like to
+      join us in this exciting new blockchain venture?\r"
+    minusTwo: "You think your powerful, but you don't even know how real money works.
+      Figures.\r"
+  result:
+    Yes: "I'm excited to help you earn some big gains on your spare money! Oh, and
+      sure I'll vote for you too.\r"
+    No: 'Look, if you arn''t ready to talk gains then your just wasting my time. '

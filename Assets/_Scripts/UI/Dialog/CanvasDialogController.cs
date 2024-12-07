@@ -7,6 +7,7 @@ using UnityEngine;
 public class CanvasDialogController : MonoBehaviour
 {
 
+
     bool isInitialized;
     public SelectBribeController bribeSelect;
     public SelectDialogController dialogSelect;
@@ -34,8 +35,12 @@ public class CanvasDialogController : MonoBehaviour
         StartCoroutine(HandleDialog(citizen));
     }
 
-    public void Complete()
+    public void Complete(CitizenCanvasSession session = null)
     {
+        if(session != null)
+        {
+            CitizenCanvasSession.OnSessionComplete?.Invoke(session);
+        }
         gameObject.SetActive (false);
     }
 
@@ -44,7 +49,7 @@ public class CanvasDialogController : MonoBehaviour
     {
         if (sessions.ContainsKey(citizen))
         {
-            dialogDisplay.Show(GenerateDisplay(citizen, IsFavored(sessions[citizen]) ? citizen.result.Yes : citizen.result.No));
+            dialogDisplay.Show(GenerateDisplay(citizen, sessions[citizen].IsFavored() ? citizen.result.Yes : citizen.result.No));
             yield return new WaitUntil(() => dialogDisplay.IsComplete);
             Complete();
             yield break;
@@ -71,9 +76,9 @@ public class CanvasDialogController : MonoBehaviour
 
         }
         sessions.Add(citizen, session);
-        dialogDisplay.Show(GenerateDisplay(citizen, IsFavored(session) ? citizen.result.Yes : citizen.result.No));
+        dialogDisplay.Show(GenerateDisplay(citizen, session.IsFavored() ? citizen.result.Yes : citizen.result.No));
         yield return new WaitUntil(()=>dialogDisplay.IsComplete);
-        Complete();
+        Complete(session);
     }
 
 
@@ -134,10 +139,10 @@ public class CanvasDialogController : MonoBehaviour
     }
 
 
-    public bool IsFavored(CitizenCanvasSession session)
-    {
-        return session.GetTotalOpinion() > 5;
-    }
+    //public bool IsFavored(CitizenCanvasSession session)
+    //{
+    //    return session.GetTotalOpinion() > 5;
+    //}
 
 
     DisplayDialog GenerateDisplay(CitizenObject citizen, string dialog)
@@ -166,6 +171,10 @@ public class CanvasDialogController : MonoBehaviour
 [System.Serializable]
 public class CitizenCanvasSession
 {
+
+    public static System.Action<CitizenCanvasSession> OnSessionComplete;
+
+
     public CitizenObject citizen;
     public List<int> opinions;
     public bool isBribed;
@@ -195,5 +204,10 @@ public class CitizenCanvasSession
         }
 
         return rawOpinion;
+    }
+
+    public bool IsFavored()
+    {
+        return GetTotalOpinion() > 5;
     }
 }
