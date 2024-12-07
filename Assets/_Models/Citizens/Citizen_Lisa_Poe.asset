@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b125e8da112423439dd8f6d6f03a61c, type: 3}
+  m_Name: Citizen_Lisa_Poe
+  m_EditorClassIdentifier: 
+  bio:
+    name: "Lisa Poe\r"
+    portrait: "\r"
+    avater: "\r"
+    description: "Police uniform.\r"
+    dossier: "Police officer of 25 years. \r"
+  sentiment:
+    positive: "Casual\r"
+    negative: "Professional\r"
+    intro: "Good day to you. I just got off a long night shift on traffic duty, so
+      please be quick. \r"
+    startingOpinion: 5
+  proposals:
+  - positive: "Question\r"
+    negative: "Deception\r"
+    plusOne: "That's a real thinker. \r"
+    plusTwo: "You know something, I've never thought about that. I'm glad to see
+      you have!\r"
+    zero: "Like I said, I'm tired. Is there something you need?\r"
+    minusOne: "Oh good, empty words from another lieing politician. \r"
+    minusTwo: "You must think you are talking to an idiot. Get on with it or get
+      off my porch. \r"
+  - positive: "Prison\r"
+    negative: "School\r"
+    plusOne: "I appreciate your efforts keeping me employed. \r"
+    plusTwo: "Between you and me, that would be perfect. We just finished filling
+      up the last prison!\r"
+    zero: "Really? That's what you think?\r"
+    minusOne: "Sounds like a waste of money. We all know where these hooligans end
+      up anyway. \r"
+    minusTwo: "We've got plenty of schools, and these kids still don't act right.
+      You think one more will fix it?\r"
+  - positive: "Raise Everyone\r"
+    negative: "Rich Lower\r"
+    plusOne: "I agree. We all need to pay our fair share, no more no less.\r"
+    plusTwo: "That's what I like to hear! With more taxes, I can get a new cruiser
+      in the budget. \r"
+    zero: "Do you even know what you're talking about?\r"
+    minusOne: "I'm sure the rich don't want to pay less. If they did, we'd have to
+      patrol the other neighborhoods too. \r"
+    minusTwo: "I'm sure you'd love that. And what tax bracket are you in, again?\r"
+  - positive: "Honest\r"
+    negative: "Powerful\r"
+    plusOne: "I won't lie, you seem a lot better than the other guy. \r"
+    plusTwo: "You know something, I never thought I'd meet an honest politician.
+      Thanks for proving me wrong. \r"
+    zero: "Are you done yet?\r"
+    minusOne: "Look at the big scary politician. Good luck. \r"
+    minusTwo: "It's hilarious that you think real power is in city hall. Why don't
+      you join me on patrol tomorrow, I'll show you who has power. \r"
+  result:
+    Yes: "I appreciate you visiting. You have my support!\r"
+    No: 'Funny, I was actually thinking about voting for you before, but now there''s
+      no way! '

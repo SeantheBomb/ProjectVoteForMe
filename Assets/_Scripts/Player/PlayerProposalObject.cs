@@ -6,7 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Proposal", menuName = "GameModels/Proposal")]
 public class PlayerProposalObject : ScriptableObject
 {
-
+    public string id;
     public string header;
 
     public ProposalOption[] options;

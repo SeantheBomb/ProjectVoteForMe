@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b125e8da112423439dd8f6d6f03a61c, type: 3}
+  m_Name: Citizen_Crusty_No_Name
+  m_EditorClassIdentifier: 
+  bio:
+    name: "Crusty No Name\r"
+    portrait: "\r"
+    avater: "\r"
+    description: "Crusty Street Punk\r"
+    dossier: "20 years old, High School dropout, no known address\r"
+  sentiment:
+    positive: "Intimidation\r"
+    negative: "Professional\r"
+    intro: "How's it hanging? Something I can help you with?\r"
+    startingOpinion: 5
+  proposals:
+  - positive: "Deceptive\r"
+    negative: "Headliner\r"
+    plusOne: "Spitting facts, my guy. I'll hear you out. \r"
+    plusTwo: "No way. That's pretty far out, I hardly believe it!\r"
+    zero: "Can you speed this up? I've got better things to do. \r"
+    minusOne: "It's all flashy lights, dude. Do you have anything real to say?\r"
+    minusTwo: "Can I be honest? You're super boring. \r"
+  - positive: "Hospital\r"
+    negative: "School\r"
+    plusOne: "If you think you can pull that off, more power to ya. \r"
+    plusTwo: "Make it happen, friend. \r"
+    zero: "I mean... maybe? I guess?\r"
+    minusOne: "No way man. Kids spend too much time in school already. Gets in the
+      way of their education, you feel me?\r"
+    minusTwo: "I see what this is. Did my Dad send you? I'm not going back to school,
+      and you can't make me!\r"
+  - positive: "Rich Raise\r"
+    negative: "Raise Everyone\r"
+    plusOne: "Sounds pretty rad to me. \r"
+    plusTwo: "That's the idea, get your taxes from the people who can afford em!\r"
+    zero: "As long as someone else has to pay it. \r"
+    minusOne: "I'm gonna tell you right now, I aint gonna be the one to build you
+      a new city hall. \r"
+    minusTwo: "Sure, more taxes for everyone but you, right?\r"
+  - positive: "Powerful\r"
+    negative: "Smart\r"
+    plusOne: "You know, I like you more than I'd expect from a politician. \r"
+    plusTwo: "Look it takes a lot to get my respect. But you sound like you know
+      what you want, and you're not afraid to get it. \r"
+    zero: "Sure, whatever, man. \r"
+    minusOne: "Are colorful words all you have?\r"
+    minusTwo: "Huh? I gotta be straight with you, I have no idea what you just said.
+      \r"
+  result:
+    Yes: "I wasn't really planning on voting, but if I do I'll totally vote for you!\r"
+    No: Honestly dude, your problem is you think voting is going to fix things. Fight
+      the system!

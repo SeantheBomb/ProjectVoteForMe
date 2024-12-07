@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b125e8da112423439dd8f6d6f03a61c, type: 3}
+  m_Name: Citizen_Tim_Steer
+  m_EditorClassIdentifier: 
+  bio:
+    name: "Tim Steer\r"
+    portrait: "\r"
+    avater: "\r"
+    description: "Union Boss, not afraid to get his hands dirty\r"
+    dossier: "Union Boss\r"
+  sentiment:
+    positive: "Intimidating\r"
+    negative: "Casual\r"
+    intro: "Oh let me guess, you want something from me. Hurry up, my men are waiting
+      for me on site. \r"
+    startingOpinion: 5
+  proposals:
+  - positive: "Deceptive\r"
+    negative: "Question\r"
+    plusOne: "I've got a few until I gotta be at the work site, go ahead. \r"
+    plusTwo: "You know something? I like the cut of your gib. I'm listening\r"
+    zero: "Just get on with it. \r"
+    minusOne: "Your asking me? Your supposed to be the one with the ideas. \r"
+    minusTwo: "Flapping your lips with nothing to say. Just like a politician. \r"
+  - positive: "School\r"
+    negative: "Hospital\r"
+    plusOne: "Schools are always a good investment. \r"
+    plusTwo: "You've been paying attention I see. Kids need somewhere to go to keep
+      them out of trouble. \r"
+    zero: "You don't seem so sure. \r"
+    minusOne: "You think any of us can afford to go to a Hospital? Sounds like a
+      waste of money to me. \r"
+    minusTwo: "I'll bet that pandering works on the other shmucks, doesn't it?\r"
+  - positive: "Rich Raise\r"
+    negative: "Rich Lower\r"
+    plusOne: "If you can get it done, you'll have my support. \r"
+    plusTwo: "That's all I need to hear. It's about time the rich pay their share.
+      \r"
+    zero: "You're just saying whatever you think I want, arn't you?\r"
+    minusOne: "And if the rich pay less, who makes up the difference? You?\r"
+    minusTwo: "Ah, so less taxes for yourself then? I'm sure that'll be a popular
+      position. \r"
+  - positive: "Powerful\r"
+    negative: "Honest\r"
+    plusOne: "Well. You atleast seem better than the other guy. \r"
+    plusTwo: "Our city needs the strong to take charge. Keep it up. \r"
+    zero: "Are you done yet?\r"
+    minusOne: "An honest politicion? Oh that's rich. \r"
+    minusTwo: "Well, you weren't honest about being quick, were you?\r"
+  result:
+    Yes: "I've heard all I need. You've got my vote, and my union as well. Good luck.
+      \r"
+    No: 'Just as I thought. Another clown running for office. Go bark up another
+      tree. '

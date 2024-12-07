@@ -39,6 +39,7 @@ public class CanvasDialogController : MonoBehaviour
     {
         if(session != null)
         {
+            GameManager.CurrentLevel.citizenSessions.Add(session);
             CitizenCanvasSession.OnSessionComplete?.Invoke(session);
         }
         gameObject.SetActive (false);
@@ -65,6 +66,7 @@ public class CanvasDialogController : MonoBehaviour
             yield return new WaitUntil(() => dialogSelect.IsSubmitted);
             //var response = citizen.proposals[i];
             string response = ResolveProposal(citizen.proposals[i], citizen.sentiment, dialogSelect.option, dialogSelect.sentiment, ref session);
+            GameManager.CurrentSession.AddProposalOption(proposal, dialogSelect.option);
             dialogDisplay.Show(GenerateDisplay(citizen, response));
             yield return new WaitUntil(() => dialogDisplay.IsComplete);
         }

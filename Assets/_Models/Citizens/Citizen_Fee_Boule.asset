@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b125e8da112423439dd8f6d6f03a61c, type: 3}
+  m_Name: Citizen_Fee_Boule
+  m_EditorClassIdentifier: 
+  bio:
+    name: "Fee Boule\r"
+    portrait: "\r"
+    avater: "\r"
+    description: "Sickly Woman\r"
+    dossier: "35 years old, significant medical debt. \r"
+  sentiment:
+    positive: "Humerous\r"
+    negative: "Professional\r"
+    intro: "Hello! Thanks for visiting. Can you speak up a little, it's hard to hear
+      over my breathing machine. \r"
+    startingOpinion: 5
+  proposals:
+  - positive: "Straightforward\r"
+    negative: "Question\r"
+    plusOne: "Thanks for getting to the point, but do you have to take things so
+      serisously? We're just chatting, lighten up!\r"
+    plusTwo: "Thanks for getting to the point. I don't have much time left, after
+      all!\r"
+    zero: "Look, the doctors told me I don't have much time left. Help me understand
+      why I should waste any on you. \r"
+    minusOne: "Your asking me? I don't know, that's why I'm not running for office.
+      I mean, among other reasons. \r"
+    minusTwo: "I really don't have time for your questions. Is that all?\r"
+  - positive: "Hospital\r"
+    negative: "Prison\r"
+    plusOne: "That would help me a lot. Thanks for standing up for me!\r"
+    plusTwo: "Hah! You said it. That would help me a lot. Thanks for standing up
+      for me!\r"
+    zero: "I just don't think that would help me very much. \r"
+    minusOne: "Don't you have enough prisons?\r"
+    minusTwo: "Oh brother, don't you have enough prisons?\r"
+  - positive: "Rich Raise\r"
+    negative: "Rich Lower\r"
+    plusOne: "Oh wouldn't that be wonderful.\r"
+    plusTwo: "Oh wouldn't that be wonderful. Brightens my day at the thought. \r"
+    zero: "Be honest, would that really change anything?\r"
+    minusOne: "I just hope you've thought that through. If the rich pay less, who
+      will you make it up from? I know it won't be me. \r"
+    minusTwo: "That just doesn't seem very smart.\r"
+  - positive: "Powerful\r"
+    negative: "Smart\r"
+    plusOne: "I want to leave this world a better place than I found it. Maybe I
+      can do that by voting for you.\r"
+    plusTwo: "Well that makes me smile. I want to leave this world a better place
+      than I found it. Maybe I can do that by voting for you.\r"
+    zero: "Yes, well, good luck with that. \r"
+    minusOne: "We've had a lot of smart people in Town Hall. What makes you any different?\r"
+    minusTwo: "There's plenty of smart people in Town Hall, and our city is still
+      a pit. \r"
+  result:
+    Yes: "You've really made my day. Thanks for visiting. It's hard for me to go
+      out these days, but I'll happily go to the polls for you.\r"
+    No: 'Frankly, it''s so hard for me to get out of the house these days, I probably
+      just won''t vote. '

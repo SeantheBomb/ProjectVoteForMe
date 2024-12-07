@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b125e8da112423439dd8f6d6f03a61c, type: 3}
+  m_Name: Citizen_Henry_Harmen
+  m_EditorClassIdentifier: 
+  bio:
+    name: "Henry Harmen\r"
+    portrait: "\r"
+    avater: "\r"
+    description: "Big, threatening \r"
+    dossier: "Father of 2, Construction worker, no voting history\r"
+  sentiment:
+    positive: "Casual\r"
+    negative: "Intimidating\r"
+    intro: "Who the hell are you? \r"
+    startingOpinion: 5
+  proposals:
+  - positive: "Question\r"
+    negative: "Headliner\r"
+    plusOne: "Do you really wan't to know what I think? Huh, that's new. I need to
+      feed my kids though, so can you be quick?\r"
+    plusTwo: "Huh, that's a really good question! I don't know. I need to feed my
+      kids though, so can you be quick?\r"
+    zero: "No. And tell your people to stop calling me. \r"
+    minusOne: "Don't you have better things to do? Get out of here. \r"
+    minusTwo: "I wan't to make something clear to you. I am very armed.\r"
+  - positive: "School\r"
+    negative: "Prison\r"
+    plusOne: "Pefect, that's right on my way to to work. You'd make it much easier
+      to drop the kids off. \r"
+    plusTwo: "I'll tell you what, that would be a great place for a new school! It's
+      right on my way to work, make it much easier to drop off the kids. \r"
+    zero: "You really don't get what's important, do you?\r"
+    minusOne: "Yeah, sounds right. Another place to lock up innocent people. \r"
+    minusTwo: "Is it a fight your looking for? Because you came to the right place.
+      \r"
+  - positive: "Tax Same\r"
+    negative: "Raise Everyone\r"
+    plusOne: "If I were you, I'd campaign on less taxes. But I get it, why rock the
+      boat. \r"
+    plusTwo: "Yeah, I suppose I could keep paying what I'm paying. For now, atleast.
+      \r"
+    zero: "Are you done yet?\r"
+    minusOne: "I already pay my fair share. I won't pay another cent. \r"
+    minusTwo: "Over my cold, dead, body. \r"
+  - positive: "Kind\r"
+    negative: "Powerful\r"
+    plusOne: "I'll believe it when I see it, buddy. \r"
+    plusTwo: "A kind politician? Alright, if you say so, I suppose. \r"
+    zero: "You've said your piece then?\r"
+    minusOne: "If you're so powerful, find someone else to vote for you. \r"
+    minusTwo: "Walk your powerful ass off my porch then. \r"
+  result:
+    Yes: "Thank you for coming by. From your posters you looked like an idiot, but
+      you might be alright.\r"
+    No: 'Hell no I won''t vote for you. If you want to survive to election day, start
+      walking. '

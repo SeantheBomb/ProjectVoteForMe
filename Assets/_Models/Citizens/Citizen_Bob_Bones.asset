@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b125e8da112423439dd8f6d6f03a61c, type: 3}
+  m_Name: Citizen_Bob_Bones
+  m_EditorClassIdentifier: 
+  bio:
+    name: "Bob Bones\r"
+    portrait: "\r"
+    avater: "\r"
+    description: "Wild Conspiracy Theorist\r"
+    dossier: "No governement records on file.\r"
+  sentiment:
+    positive: "Intimidating\r"
+    negative: "Professional\r"
+    intro: "Hey wait now, are you with the government? You're not here to scan my
+      brain are ya? Because I already told the last guy no. \r"
+    startingOpinion: 2
+  proposals:
+  - positive: "Question\r"
+    negative: "Deceptive\r"
+    plusOne: "I'm not answering any questions until you admit that aliens that have
+      infiltrated your Town Hall.\r"
+    plusTwo: "I gotta say, I like your style. Before I answer your question, we need
+      to talk about the aliens that have infiltrated your Town Hall. \r"
+    zero: "Ha! Voting! Everyone knows the elections are decided by your reptilian
+      masters. You probably already know you've won. \r"
+    minusOne: "Nice try, but my eyes are wide open. You don't fool me. \r"
+    minusTwo: "Nice try, but my eyes are wide open. You don't fool me. I can see
+      the creases in that skin suit. \r"
+  - positive: "Mall\r"
+    negative: "Prison\r"
+    plusOne: "A Mall works for me. I don't trust anything run by the scaly bastards
+      in town hall.\r"
+    plusTwo: "I see you mean business. Tell your masters I'd approve of a Mall. \r"
+    zero: "You'll build whatever your masters want, won't you?\r"
+    minusOne: "Yeah, more \"prisons\". Who really believes that, lizard man. \r"
+    minusTwo: "Oh yeah? I know what goes on in those prisons. You feed the prisoners
+      to your Hive Queen, don't you?\r"
+  - positive: "Rich Lower\r"
+    negative: "Tax Same\r"
+    plusOne: "Makes sense to me, why target the rich just because they have more
+      than you. \r"
+    plusTwo: "Finally a good idea from you. I mean, what's with targeting the rich
+      just because they have more than you. \r"
+    zero: "I'll bet you'd love that, wouldn't you?\r"
+    minusOne: "Maintain the status quo, that's your mission right?\r"
+    minusTwo: "Is that what your Hive masters tell you? To maintain the status quo?
+      You're one of them, I know it. \r"
+  - positive: "Honest\r"
+    negative: "Powerful\r"
+    plusOne: "Once your on the inside, will you publish everything about the Aliens?
+      Blink twice for yes. \r"
+    plusTwo: "Look I want to trust you, but why won't you admit to the obvious truth
+      about the reptilian aliens?\r"
+    zero: "Suuuure. Whatever you say. \r"
+    minusOne: "Hah, yeah. Mr. Powerful over here, begging for votes door to door.
+      \r"
+    minusTwo: "Hah, yeah. Mr. prim, proper and powerful over here, begging for votes
+      door to door. Go crawl back in your hole. \r"
+  result:
+    Yes: "I never thought I'd say this but... sure. I'll vote for you. But I'll be
+      watching you.\r"
+    No: 'What does voting even matter? I''m not going to waste my time. '

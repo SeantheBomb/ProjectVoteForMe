@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b125e8da112423439dd8f6d6f03a61c, type: 3}
+  m_Name: Citizen_Tiffany_Bloute
+  m_EditorClassIdentifier: 
+  bio:
+    name: "Tiffany Bloute\r"
+    portrait: "\r"
+    avater: "\r"
+    description: "Tik Tok Kid\r"
+    dossier: "18 Years old, recent registered to vote.\r"
+  sentiment:
+    positive: "Casual\r"
+    negative: "Professional\r"
+    intro: "Oh are you here for my Mom? She's not in right now. Oh wait, you're that
+      dude from those posters! I just turned 18, I'm old enough to vote! \r"
+    startingOpinion: 6
+  proposals:
+  - positive: "Headliner\r"
+    negative: "Straightforward\r"
+    plusOne: "Yeah I was just watching a video about that online. \r"
+    plusTwo: "Woah, yeah I was just watcing a video about that online! Did you see
+      the one about that robber who stole a baby in a break in? \r"
+    zero: "Oh. I don't know anything about that. \r"
+    minusOne: "Uh - hu. Hey, actually... I left my phone inside. Is there anything
+      else?\r"
+    minusTwo: "Can I be honest with you mister? You're more boring then I expected.
+      \r"
+  - positive: "Prison\r"
+    negative: "School\r"
+    plusOne: "Oh yeah, I was just watching a video about how crime is so high that
+      the current prison is full. \r"
+    plusTwo: "That makes sense! I was just watching a video about how crime is so
+      high that the current prison is full. \r"
+    zero: "Yeah, I guess that's better than an empty lot. \r"
+    minusOne: "What for? Don't we have enough schools. \r"
+    minusTwo: "Ew no! Why would we need another school?\r"
+  - positive: "Tax Same\r"
+    negative: "Raise Everyone\r"
+    plusOne: "Sure, you seem like you know what you're talking about. \r"
+    plusTwo: "I don't really know anything about taxes. You seem smart, so yeah,
+      if you say so. \r"
+    zero: "Boring. Next.\r"
+    minusOne: "Wait, you can't do that because then I'd have to pay more taxes too
+      and... well I don't want to do that. \r"
+    minusTwo: "No! Don't do that, then I'd have to pay more taxes too! And I only
+      just started paying!\r"
+  - positive: "Smart\r"
+    negative: "Honest\r"
+    plusOne: "Okay cool. Wanna trade socials?\r"
+    plusTwo: "You know, I like listening to you talk. Can we trade socials?\r"
+    zero: "Yeah, sure. Are you done?\r"
+    minusOne: "I mean, lets be real here. Is honesty really how you get ahead in
+      politics?\r"
+    minusTwo: "Aww, you really think that's going to work, don't you?\r"
+  result:
+    Yes: "You know what, I like you! Shoot me a text with a link to vote. Can I get
+      a picture with you for my followers?\r"
+    No: 'No thank you sir. Frankly, I''m just not impressed. '

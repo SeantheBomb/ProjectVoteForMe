@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9d095140717f94f9a728cc1ad24761, type: 3}
   m_Name: Proposal C
   m_EditorClassIdentifier: 
+  id: Tax
   header: Tax
   options:
   - id: Rich Raise

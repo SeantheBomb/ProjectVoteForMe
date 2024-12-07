@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b125e8da112423439dd8f6d6f03a61c, type: 3}
+  m_Name: Citizen_Nandy_Dame
+  m_EditorClassIdentifier: 
+  bio:
+    name: "Nandy Dame\r"
+    portrait: "\r"
+    avater: "\r"
+    description: "Rich NIMBY Lady\r"
+    dossier: "Member of 5 Social Clubs, Regular speaker at monthly town hall.\r"
+  sentiment:
+    positive: "Professional\r"
+    negative: "Casual\r"
+    intro: "Oh! Are you the one running for mayor? I'm so glad you stopped by, I
+      have a lot of suggestions for you regarding this terrible crime wave.  \r"
+    startingOpinion: 5
+  proposals:
+  - positive: "Question \r"
+    negative: "Deception\r"
+    plusOne: "If you wan't to know what I think, the defining issue of this election
+      is crime. \r"
+    plusTwo: "It's about time someone at City Hall understood how much perspective
+      I have to offer! Together, we can address the real threats to this city.\r"
+    zero: "Can we focus on the most imporant issue? What are you going to do to clean
+      these punks off our streets?\r"
+    minusOne: "Oh no you don't, I've done my homework. You're talking to an informed
+      voter, who knows the important issues. \r"
+    minusTwo: "Do you take this flippant tone with all voters? Or just the important
+      ones?\r"
+  - positive: "Prison\r"
+    negative: "Hospital\r"
+    plusOne: "My thought's exactly, infact I just heard that the other prison is
+      full! \r"
+    plusTwo: "I love your focus on practical solutions! The city needs somewhere
+      to lock up all those dangerous people walking around.\r"
+    zero: "Come now, don't we have enough?\r"
+    minusOne: "Why? I mean, everyone I know goes to the corporate hospital anyway.\r"
+    minusTwo: "And why should I have to pay for that Hospital? Who even really needs
+      it?\r"
+  - positive: "Rich Lower\r"
+    negative: "Tax Same\r"
+    plusOne: "You've got the right idea. \r"
+    plusTwo: "Good, a practical solution! I'll get to invest the money I save in
+      my stock accounts, that's better for the economy anyway. \r"
+    zero: "You just don't get it, do you?\r"
+    minusOne: "Do you have any idea how much I pay in taxes? Apparently not, because
+      if you did, you'd also want them lower. \r"
+    minusTwo: "Go take an economics class, then come talk to me about taxes. \r"
+  - positive: "Smart\r"
+    negative: "Powerful \r"
+    plusOne: "You seem intelligent enough, I suppose. \r"
+    plusTwo: "You have a good head on your shoulders. I appreciate your focus on
+      the issues. \r"
+    zero: "Your sweet, but you arn't all the bright, are you?\r"
+    minusOne: "It's cute how you politicians think you have the power. \r"
+    minusTwo: "If you think that's how you take office, I think you have another
+      thing coming.\r"
+  result:
+    Yes: "Thank you for talking the issues with me. I look forward to seeing you
+      in City Hall!\r"
+    No: 'I hope you didn''t quit your job to do this, because you are clearly wasting
+      your time. '
