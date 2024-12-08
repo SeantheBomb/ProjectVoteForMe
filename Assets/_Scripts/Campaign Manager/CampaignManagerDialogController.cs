@@ -8,6 +8,8 @@ public class CampaignManagerDialogController : MonoBehaviour
 
     public CampaignManagerObject manager;
 
+    public MacroMenuController macro;
+
     public TMP_Text text;
 
     bool isAcknowledged;
@@ -16,7 +18,19 @@ public class CampaignManagerDialogController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        macro = GetComponentInParent<MacroMenuController>();
+        if(GameManager.CurrentSession.CurrentLevelIndex == -1)
+        {
+            StartCoroutine(Display(manager.intro));
+        }
+        else
+        {
+            var interstitial = manager.interstitials[GameManager.CurrentSession.CurrentLevelIndex];
+            var report = macro.GetTotalResults();
+            bool isWinning = report.playerTally > report.opposingTally;
+            string[] output = isWinning ? interstitial.winningDialog : interstitial.losingDialog;
+            StartCoroutine(Display(output));
+        }
     }
 
     private void Update()
@@ -34,7 +48,7 @@ public class CampaignManagerDialogController : MonoBehaviour
             string output = d.Replace("[Name]", GameManager.CurrentSession.playerName);
             isAcknowledged = false;
             text.text = "";
-            foreach (char c in d)
+            foreach (char c in output)
             {
                 if (isAcknowledged)
                 {

@@ -127,6 +127,7 @@ public class GameSession
     {
         levelSessions = new List<LevelSession>();
         proposalHistory = new List<ProposalHistory>();
+        this.playerName = playerName;
         //creationDate = DateTime.Now;
         //this.saveSlot = saveSlot;
     }
