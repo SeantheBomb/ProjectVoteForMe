@@ -33,6 +33,18 @@ public class GameManager
 
     public static LevelSession CurrentLevel => CurrentSession.CurrentLevel;
 
+
+    static LevelConfig _config;
+
+    public static LevelConfig Config
+    {
+        get
+        {
+            if (_config == null) _config = Resources.Load<LevelConfig>("Data/LevelConfig");
+            return _config;
+        }
+    }
+
     public void CreateSession()
     {
         _currentSession = new GameSession();
@@ -88,12 +100,22 @@ public class GameSession
     public List<LevelSession> levelSessions;
     public List<ProposalHistory> proposalHistory;
 
-    int _currentLevelIndex;
+    int _currentLevelIndex = -1;
     public LevelSession CurrentLevel
     {
         get
         {
             return levelSessions[_currentLevelIndex];
+        }
+    }
+
+    public int CurrentLevelIndex => _currentLevelIndex;
+
+    public CitizenCohortObject CurrentCohort
+    {
+        get
+        {
+            return GameManager.Config.levels[_currentLevelIndex].cohort;
         }
     }
 
@@ -107,10 +129,20 @@ public class GameSession
         //this.saveSlot = saveSlot;
     }
 
-    public void StartNewLevel()
+    public int StartNewLevel()
     {
         levelSessions.Add(new LevelSession());
         _currentLevelIndex += 1;
+        return _currentLevelIndex;
+    }
+
+    public void StartLevel(int index)
+    {
+        for (int i = levelSessions.Count; i <= index; i++)
+        {
+            levelSessions.Add(new LevelSession());
+        }
+        _currentLevelIndex = index;
     }
 
     //public static GameSession LoadSave(string json)
@@ -144,6 +176,11 @@ public class GameSession
 public class LevelSession
 {
     public List<CitizenCanvasSession> citizenSessions;
+
+    public LevelSession()
+    {
+        citizenSessions = new List<CitizenCanvasSession>();
+    }
 
 }
 

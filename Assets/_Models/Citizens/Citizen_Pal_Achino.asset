@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b125e8da112423439dd8f6d6f03a61c, type: 3}
+  m_Name: Citizen_Pal_Achino
+  m_EditorClassIdentifier: 
+  bio:
+    name: "Pal Achino\r"
+    portrait: "\r"
+    avater: "\r"
+    description: "Mob Boss\r"
+    dossier: "Crime lord in major gang. \r"
+  sentiment:
+    positive: "Intimidating\r"
+    negative: "Casual\r"
+    intro: "Ah yes. The Wanna be mayor. I take it your here to grovel for my support?\r"
+    startingOpinion: 5
+  proposals:
+  - positive: "Straightforward\r"
+    negative: "Deceptive\r"
+    plusOne: "Get on with your point then. \r"
+    plusTwo: "Now that's the tone that gets things done. \r"
+    zero: "I'm afraid words arn't going to move me without credits to back them up.
+      \r"
+    minusOne: "You seem to have confused me with an idiot. \r"
+    minusTwo: "Why don't you straighten your back when you talk to your betters.
+      \r"
+  - positive: "Mall\r"
+    negative: "Prison\r"
+    plusOne: "I'm happy to see someone's already talked to you about the Mall deal.
+      \r"
+    plusTwo: "You don't need to put on a show on for me, kid. I know all about the
+      Mall deal. \r"
+    zero: "At the end of the day, it dosen't matter what ya build, so long as you
+      understand who's going to be building it. \r"
+    minusOne: "I'm going to need you to kill the Prison deal. Lets just say the leaders
+      of that project... won't see reason. \r"
+    minusTwo: "I'm going to need you to kill the Prison deal. Lets just say the leaders
+      of that project... won't see reason.\r"
+  - positive: "Rich Lower\r"
+    negative: "Tax Same\r"
+    plusOne: "Very, very good. \r"
+    plusTwo: "Good. You've got the right idea. \r"
+    zero: "Good luck with that. \r"
+    minusOne: "Sorry did you not get the Memo? If you wan't into that office, there's
+      only one direction my taxes will go. \r"
+    minusTwo: "You must have forgotten who you are talking to. \r"
+  - positive: "Powerful\r"
+    negative: "Honest\r"
+    plusOne: "Just remember who holds the real power. \r"
+    plusTwo: "That's the spirit kid. But remember who holds the real power is always
+      in the purse.\r"
+    zero: "That's cute. That's honestly, really cute.\r"
+    minusOne: "Hah! Good luck with that kid. \r"
+    minusTwo: "You really don't know what you're doing, do you?\r"
+  result:
+    Yes: "Color me convinced. Ill stuff a few extra votes in the box for ya. \r"
+    No: 'It''s not looking good for you, friend. Not looking good at all. '

@@ -20,6 +20,8 @@ public class DisplayDialogController : MonoBehaviour
 
     Dictionary<string, Sprite> portraits;
 
+    bool isAcknowledged;
+
 
     private void Awake()
     {
@@ -43,15 +45,24 @@ public class DisplayDialogController : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    private void Update()
+    {
+        if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.E))
+        {
+            isAcknowledged = true;
+        }
+    }
+
 
     IEnumerator Display(DisplayDialog dialog)
     {
         foreach(string d in dialog.dialog)
         {
+            isAcknowledged = false;
             text.text = "";
             foreach(char c in d)
             {
-                if (IsAcknowledged())
+                if (isAcknowledged)
                 {
                     Complete();
                     yield break;
@@ -75,15 +86,16 @@ public class DisplayDialogController : MonoBehaviour
                         break;
                 }
             }
-            yield return new WaitUntil(() => IsAcknowledged());
+            yield return new WaitUntil(() => isAcknowledged);
+            yield return new WaitForSeconds(0.1f);
         }
         Complete();
     }
 
-    bool IsAcknowledged()
-    {
-        return Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space);
-    }
+    //bool IsAcknowledged()
+    //{
+    //    return Input.GetMouseButton(0) || Input.GetKey(KeyCode.Return) || Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.E);
+    //}
 
 
 //    public Sprite GetPortrait(string key)

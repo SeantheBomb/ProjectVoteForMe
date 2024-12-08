@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b125e8da112423439dd8f6d6f03a61c, type: 3}
+  m_Name: Citizen_Papa_Pedro
+  m_EditorClassIdentifier: 
+  bio:
+    name: "Papa Pedro\r"
+    portrait: "\r"
+    avater: "\r"
+    description: "Jovial Father Type\r"
+    dossier: "55 year old, divorced, father to 2. \r"
+  sentiment:
+    positive: "Humerous\r"
+    negative: "Intimidating\r"
+    intro: "Knock, Knock - who's there! You! Get it? Because you're knocking. Call
+      me Papa, what can I help you with?\r"
+    startingOpinion: 6
+  proposals:
+  - positive: "Headliner\r"
+    negative: "Straightforward\r"
+    plusOne: "Are you that young man running for mayor? I hope you get there fast!\r"
+    plusTwo: "That's hilarious! Are you that young man running for mayor? I hope
+      you get there fast\r"
+    zero: "Why so serious, sonny?\r"
+    minusOne: "Come on sonny, don't take things so serious.\r"
+    minusTwo: "Hey now, there's no need for all of that. \r"
+  - positive: "School\r"
+    negative: "Prison\r"
+    plusOne: "Hey what will the Buffalo say to his kid when he drops him off at that
+      school? Bison!\r"
+    plusTwo: "That's a good one - here's one. Hey what will the Buffalo say to his
+      kid when he drops him off at that school? Bison!\r"
+    zero: "Yeah, I guess that works. \r"
+    minusOne: "Well, if those prisoners could take their own mugshots... they'd be
+      cellfies! But come one... isn't another prison kind of cellfish?\r"
+    minusTwo: "Come on, we can be having fun here but you need to check your tone.
+      \r"
+  - positive: "Tax Same\r"
+    negative: "Rich Raise\r"
+    plusOne: "I suppose that's the best thing, after not paying taxes at all!\r"
+    plusTwo: "That'd be great. You're cheering me up, my grief counselor died the
+      other day. Thing is, he was so good at his job, I hardly care.\r"
+    zero: "Taxes are taxes I suppose. Nothing to joke about. \r"
+    minusOne: "Come on now, no need to bully the Rich. \r"
+    minusTwo: "Well I'm not sure what you expect me to do about it.\r"
+  - positive: "Kind\r"
+    negative: "Honest\r"
+    plusOne: "This was a nice way to kill time!  I had plans to meet a girl to work
+      out earlier, but she didn't show. I don't think the two of us are going to
+      work out. \r"
+    plusTwo: "I'm so glad you stopped by. I had plans to meet a girl to work out
+      earlier, but she didn't show. I don't think the two of us are going to work
+      out. \r"
+    zero: "Okay. Hey can I ask you a questions? Am I funny? Last week I put 10 puns
+      in a joke competition. I really thought with that many, one was sure to be
+      a winner. Sadly, no pun in ten did.\r"
+    minusOne: "Look I'm normally all for honesty but... you know this is politics
+      right?\r"
+    minusTwo: "Um, I'm kind of confused here. \r"
+  result:
+    Yes: "Sonny, thanks for visiting. I'll vote for anyone who's willing to stop
+      by and spend time with an old joe like me. \r"
+    No: 'I''m sorry sonny. I think you just might be barking up the wrong tree. '

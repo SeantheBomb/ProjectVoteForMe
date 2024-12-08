@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b125e8da112423439dd8f6d6f03a61c, type: 3}
+  m_Name: Citizen_Robert_Yarbrough
+  m_EditorClassIdentifier: 
+  bio:
+    name: "Robert Yarbrough\r"
+    portrait: "\r"
+    avater: "\r"
+    description: "Robot \r"
+    dossier: "Age 72, Wealthy inventor, no public appearances in recent months. \r"
+  sentiment:
+    positive: "Professional\r"
+    negative: "Humerous\r"
+    intro: "Greetings! Thank you for visiting the Yarbrough Manor. Unfortunatly,
+      my master is resting for some time now, but I am programmed to speak on his
+      behalf. How may I help you?\r"
+    startingOpinion: 5
+  proposals:
+  - positive: "Straightforward\r"
+    negative: "Deceptive\r"
+    plusOne: "Thank you. Will that be all?\r"
+    plusTwo: "I understand. I will report your candidacy to my Master when he wakes
+      up. \r"
+    zero: "Will that be all?\r"
+    minusOne: "Error: I apologize, but that information does not match with my records.
+      \r"
+    minusTwo: "Error: I apologize, but I do not understand. \r"
+  - positive: "Mall\r"
+    negative: "School\r"
+    plusOne: "My master has not requested many shopping items of late, but when he
+      awakens I'm sure he will be excited about the new Mall.\r"
+    plusTwo: "Thank you. My master has not requested many shopping items of late,
+      but when he awakens I'm sure he will be excited about the new Mall. \r"
+    zero: "No, thank you. That is not what my master would desire. \r"
+    minusOne: "I am pleased to report that all Yarbrough children have now completed
+      their schoolings. Schools are no longer necessary. \r"
+    minusTwo: "Error: I apologize, but I do not understand.\r"
+  - positive: "Rich Lower\r"
+    negative: "Rich Raise\r"
+    plusOne: "That would be prefered.\r"
+    plusTwo: "That would be prefered. My Master says taxes are, \"How the stupid
+      steal from the smart\". \r"
+    zero: "I do not believe that would please my Master.\r"
+    minusOne: "That would be unacceptable. My Master says taxes are, \"How the stupid
+      steal from the smart\". \r"
+    minusTwo: "Error: I apologize, but I do not understand.\r"
+  - positive: "Smart\r"
+    negative: "Kind\r"
+    plusOne: "Your logic is clear.\r"
+    plusTwo: "Your logic is clear, I understand. \r"
+    zero: "Will that be all?\r"
+    minusOne: "Error: I apologize, this is not a concept I have been programmed to
+      understand. \r"
+    minusTwo: "Error: I apologize, but I do not understand.\r"
+  result:
+    Yes: "Thank you for your visit. Based on the criteria my Master granted me, I
+      believe you are an appropriate canidate. \r"
+    No: Thank you for your visit. Based on the criteria my Master granted me, I do
+      not believe you are an appropriate canidate.

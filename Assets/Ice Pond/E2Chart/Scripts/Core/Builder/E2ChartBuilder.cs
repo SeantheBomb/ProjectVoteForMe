@@ -98,7 +98,7 @@ namespace E2C.ChartBuilder
 
         protected bool VerifyChartRect()
         {
-            return chartRect != null && chartRect.sizeDelta.x > 1.0f && chartRect.sizeDelta.y > 1.0f;
+            return true;//chartRect != null && chartRect.sizeDelta.x > 1.0f && chartRect.sizeDelta.y > 1.0f;
         }
 
         protected Vector2 ChartToTooltipPosition(Vector2 mousePosition)

@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b125e8da112423439dd8f6d6f03a61c, type: 3}
+  m_Name: Citizen_Phillipa_Tate
+  m_EditorClassIdentifier: 
+  bio:
+    name: "Phillipa Tate\r"
+    portrait: "\r"
+    avater: "\r"
+    description: "School Teacher\r"
+    dossier: "59 Year old Elementary school teacher, taught you.\r"
+  sentiment:
+    positive: "Professional\r"
+    negative: "Humerous\r"
+    intro: "Oh my goodness look who's all grown! I still remember you from my 2nd
+      grade class. \r"
+    startingOpinion: 7
+  proposals:
+  - positive: "Question\r"
+    negative: "Headliner\r"
+    plusOne: "The smartest person in the room is the one asking the most questions.\r"
+    plusTwo: "I think you'd make a good Mayor. Like I told you when you were young,
+      the smartest person in the room is the one asking the most questions.\r"
+    zero: "It's good to see you sweetie, so you want to be Mayor?\r"
+    minusOne: "I encourage you to look deeper than the headlines if you want to be
+      mayor, sweetie. \r"
+    minusTwo: "Are you sure this is what you want to do? You don't seem to be taking
+      it very seriously.\r"
+  - positive: "School\r"
+    negative: "Mall\r"
+    plusOne: "It's about time for a new school, our old one has seen better days.
+      \r"
+    plusTwo: "Oh thank you, our school building has seen much better days. It's about
+      time for a new one.\r"
+    zero: "Wouldn't it be better to built a nice new school building?\r"
+    minusOne: "That dosen't seem like a good idea to me. \r"
+    minusTwo: "I wish you would take this seriously.\r"
+  - positive: "Raise Everyone\r"
+    negative: "Rich Lower\r"
+    plusOne: "That makes sense to me. Running the city must be so expensive!\r"
+    plusTwo: "I agree. If we are going to be a great city, we all need to pull our
+      weight!\r"
+    zero: "Do you think that would be okay?\r"
+    minusOne: "Oh no, I don't think that would be very good. How would we pay for
+      the schools?\r"
+    minusTwo: "I'm very dissapointed you think this is so funny. I thought I taught
+      you better. \r"
+  - positive: "Smart\r"
+    negative: "Powerful\r"
+    plusOne: "I always knew you'd go places.\r"
+    plusTwo: "I always knew you'd go places, you were one of the few kids who paid
+      attention!\r"
+    zero: "I suppose.\r"
+    minusOne: "Just don't let all that power go to your head. \r"
+    minusTwo: "Young man I suggest you take this seriously.\r"
+  result:
+    Yes: "I'd be proud to vote for you sweetie. Good job.\r"
+    No: 'I''m dissapointed to say I can''t vote for you. If only you paid more attention
+      in my class. '

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b125e8da112423439dd8f6d6f03a61c, type: 3}
+  m_Name: Citizen_Norman_Nome.
+  m_EditorClassIdentifier: 
+  bio:
+    name: "Norman Nome. \r"
+    portrait: "\r"
+    avater: "\r"
+    description: "No Man\r"
+    dossier: "Current negligent on taxes, forms had \"no\" written into all fields.
+      \r"
+  sentiment:
+    positive: "Casual\r"
+    negative: "Intimidating\r"
+    intro: "No.\r"
+    startingOpinion: 1
+  proposals:
+  - positive: "Straightforward\r"
+    negative: "Deceptive\r"
+    plusOne: "Maybe\r"
+    plusTwo: "Okay.\r"
+    zero: "No.\r"
+    minusOne: "No.\r"
+    minusTwo: "Hell No. \r"
+  - positive: "Mall\r"
+    negative: "Prison\r"
+    plusOne: "Alright.\r"
+    plusTwo: "Yes\r"
+    zero: "Maybe. \r"
+    minusOne: "No.\r"
+    minusTwo: "Hell No.\r"
+  - positive: "Tax Same\r"
+    negative: "Raise Everyone\r"
+    plusOne: "Alright.\r"
+    plusTwo: "Yes\r"
+    zero: "No.\r"
+    minusOne: "No.\r"
+    minusTwo: "Hell No.\r"
+  - positive: "Honest\r"
+    negative: "Kind\r"
+    plusOne: "Alright.\r"
+    plusTwo: "Yes\r"
+    zero: "No.\r"
+    minusOne: "No.\r"
+    minusTwo: "Hell No.\r"
+  result:
+    Yes: "Yes. \r"
+    No: No.

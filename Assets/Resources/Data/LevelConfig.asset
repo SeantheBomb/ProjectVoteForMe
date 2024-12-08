@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edf5f45cc31f77e40a5071ce12684f21, type: 3}
-  m_Name: SceneLoaderData
+  m_Script: {fileID: 11500000, guid: 11aeed97a4def9e42b753904fb5f4d4b, type: 3}
+  m_Name: LevelConfig
   m_EditorClassIdentifier: 
-  MainMenuScene: Main Menu
-  NextLevelScene: Macro Menu
-  levelScenes:
-  - SampleScene
+  levels:
+  - cohort: {fileID: 11400000, guid: 95cbba43de52e404db7b79b598ba2a1b, type: 2}

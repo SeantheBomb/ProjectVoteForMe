@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b125e8da112423439dd8f6d6f03a61c, type: 3}
+  m_Name: Citizen_Richard_Filsh
+  m_EditorClassIdentifier: 
+  bio:
+    name: "Richard Filsh\r"
+    portrait: "\r"
+    avater: "\r"
+    description: "Filthy Rich Man\r"
+    dossier: "55 Year old entreprenuer, Multiple business owner, children in private
+      school.\r"
+  sentiment:
+    positive: "Professional\r"
+    negative: "Intimidating\r"
+    intro: "I'm a busy man, so please make this quick. My lawyer already sent you
+      my... \"donation\" regarding the empty lot right?\r"
+    startingOpinion: 7
+  proposals:
+  - positive: "Question\r"
+    negative: "Deceptive\r"
+    plusOne: "That's a very good question. You must have thought very hard about
+      it. \r"
+    plusTwo: "You're asking the right person! I'll have my secretary send you a full
+      report. \r"
+    zero: "Like I said, I'm a busy man. \r"
+    minusOne: "I suggest you think long and hard about what you say next. \r"
+    minusTwo: "Don't mess with me. I'll disapear you so fast you won't hear your
+      own screams. \r"
+  - positive: "Mall\r"
+    negative: "School\r"
+    plusOne: "That is the correct choice. Good job. \r"
+    plusTwo: "Ah, good. Sounds like my donation did go through. \r"
+    zero: "That is the wrong choice. \r"
+    minusOne: "What for? Everyone important has their kids in private schools anyway.
+      \r"
+    minusTwo: "You're acting very big for how very, very small you are. \r"
+  - positive: "Rich Lower\r"
+    negative: "Rich Raise\r"
+    plusOne: "Yes. That will do. \r"
+    plusTwo: "Excellent. Keep talking like that and you will go quite far in this
+      town. \r"
+    zero: "Oh, you really think that would work, don't you?\r"
+    minusOne: "Wrong. \r"
+    minusTwo: "You are certainly welcome to try, but I promise this road won't end
+      well for you. \r"
+  - positive: "Smart\r"
+    negative: "Powerful\r"
+    plusOne: "I suppose you seem as smart as anyone else I've put in office. \r"
+    plusTwo: "I think you've got the idea, son. Well done. \r"
+    zero: "Maybe that will work out for you. Is that all?\r"
+    minusOne: "Son, powerful men don't go door to door like a delivery driver. \r"
+    minusTwo: "Hah! Wow. I needed that laugh, thank you. \r"
+  result:
+    Yes: "Thank you for stopping by. I feel much better in my investment now. Together,
+      we're going to accomplish some great things. \r"
+    No: 'I''m glad you stopped by, because now I know for sure that you are the wrong
+      choice. I''ll expect my donations returned to my office by Monday. '

@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b125e8da112423439dd8f6d6f03a61c, type: 3}
+  m_Name: Citizen_Amanda_Zan
+  m_EditorClassIdentifier: 
+  bio:
+    name: "Amanda Zan\r"
+    portrait: "\r"
+    avater: "\r"
+    description: "Shopaholic\r"
+    dossier: "Outstanding credit card debts on 4 cards.\r"
+  sentiment:
+    positive: "Humerous\r"
+    negative: "Professional\r"
+    intro: "Oh hey are you the delivery driver? My package was supposed to be here
+      earlier today.\r"
+    startingOpinion: 5
+  proposals:
+  - positive: "Headliner\r"
+    negative: "Question\r"
+    plusOne: "Wow, thats kind of interesting.\r"
+    plusTwo: "That's like, super interesting. Really cool you're running for mayor,
+      I was just kidding about the package thing.\r"
+    zero: "So like... you don't have my package?\r"
+    minusOne: "Um, I don't know. \r"
+    minusTwo: "Can you clear my doorstep? I ordered like 3 things last night and
+      I don't want to miss delivery because you're in the way.\r"
+  - positive: "Mall\r"
+    negative: "Prison\r"
+    plusOne: "No way! A new Mall would be super fun. The old one's getting kind of
+      crusty.\r"
+    plusTwo: "Oh my god, you get me. \r"
+    zero: "Okay but like... wouldn't it be better to put in something fun?\r"
+    minusOne: "Ew, no, who would want that?\r"
+    minusTwo: "Gross. Prisons are super ugly.\r"
+  - positive: "Tax Same\r"
+    negative: "Raise Everyone\r"
+    plusOne: "Omg please just like, don't make my taxes go up, okay?\r"
+    plusTwo: "lol, that so funny.\r"
+    zero: "Um, sure, I guess.\r"
+    minusOne: "Um, no thank you please? \r"
+    minusTwo: "What if we just like... didn't do that?\r"
+  - positive: "Kind\r"
+    negative: "Smart\r"
+    plusOne: "I do like a kind, strong man. \r"
+    plusTwo: "Stop it! You're so funny! And kind of cute too...\r"
+    zero: "Okay. I guess that works. \r"
+    minusOne: "Uh, sorry, what?\r"
+    minusTwo: "I don't get it. \r"
+  result:
+    Yes: "So like... are you doing this whole door to door thing all day? Would you
+      like to meet up later?\r"
+    No: 'Sorry I just like... don''t think you''re very impressive. '

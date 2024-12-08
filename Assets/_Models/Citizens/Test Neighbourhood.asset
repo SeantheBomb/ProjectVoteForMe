@@ -13,7 +13,24 @@ MonoBehaviour:
   m_Name: Test Neighbourhood
   m_EditorClassIdentifier: 
   citizens:
-  - {fileID: 11400000, guid: 1a3b1a5997e82df4d9de6bca00f4e61f, type: 2}
-  - {fileID: 11400000, guid: d3c2849244ba55b4696a76e50fe6986b, type: 2}
+  - {fileID: 11400000, guid: 9d4d37e0462488d4d9aa210dbc549668, type: 2}
   - {fileID: 11400000, guid: aacc52babb529d345a8dc3c607e160fb, type: 2}
+  - {fileID: 11400000, guid: 8359ec8b6b9ea7a4f8c19d88c5094d31, type: 2}
+  - {fileID: 11400000, guid: 1a3b1a5997e82df4d9de6bca00f4e61f, type: 2}
+  - {fileID: 11400000, guid: fa6b46c6b57ca9b4cb049fea7d00bb7a, type: 2}
+  - {fileID: 11400000, guid: da0c78ae8d151c045a69d27752f263bb, type: 2}
+  - {fileID: 11400000, guid: 73549ac057d061e4581c0015f9483874, type: 2}
+  - {fileID: 11400000, guid: b3ecb1f5de39d7d4cb182bd39d02e17d, type: 2}
+  - {fileID: 11400000, guid: 8f4d18bcbe824f44daa84c7a3e9231ea, type: 2}
+  - {fileID: 11400000, guid: 051024312898d5848bbc3fc6bcf3f75b, type: 2}
+  - {fileID: 11400000, guid: 28bf49f1706450e499d96960f47df759, type: 2}
+  - {fileID: 11400000, guid: 3df70d9252c6d4f43929c7e802cd9005, type: 2}
   - {fileID: 11400000, guid: 9e9a32fae7d73c64e8b6231f81c6cfd7, type: 2}
+  - {fileID: 11400000, guid: a4464d27af6ca754bad752a73aee3efa, type: 2}
+  - {fileID: 11400000, guid: f834939fee34b2f4883d4e3ac562113b, type: 2}
+  - {fileID: 11400000, guid: a6306d1335ad0854ba2d82d8e9092f07, type: 2}
+  - {fileID: 11400000, guid: 8cd2db51cf153ee4189693014a43d3c5, type: 2}
+  - {fileID: 11400000, guid: d3c2849244ba55b4696a76e50fe6986b, type: 2}
+  - {fileID: 11400000, guid: ef060240f856d874da53529265fa9119, type: 2}
+  - {fileID: 11400000, guid: 7c31425f269f40f468c453597454c84f, type: 2}
+  - {fileID: 11400000, guid: 0eeffbec28bd5a64aa4cc78e3c2b98f0, type: 2}

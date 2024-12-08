@@ -11,6 +11,7 @@ public class PlayerInteractionController : MonoBehaviour
     public float range;
     bool isCitizenInRange;
     List<CitizenBehaviour> citizensInRange;
+    CitizenBehaviour currentCitizen;
 
 
     // Start is called before the first frame update
@@ -25,6 +26,10 @@ public class PlayerInteractionController : MonoBehaviour
     {
         UpdateCitizenInRange();
         interactPreview.SetActive(isCitizenInRange);
+        if(citizensInRange.Contains(currentCitizen) == false)
+        {
+            canvas.Complete();
+        }
     }
 
     // Update is called once per frame
@@ -38,12 +43,14 @@ public class PlayerInteractionController : MonoBehaviour
 
     void StartInteraction()
     {
+        if (canvas.gameObject.activeSelf)
+            return;
         if(citizensInRange.Count == 0)
         {
             return;
         }
-
-        canvas.Show(citizensInRange.First().citizen);
+        currentCitizen = citizensInRange.First();
+        canvas.Show(currentCitizen.citizen);
     }
 
 
