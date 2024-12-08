@@ -41,7 +41,7 @@ public class AmbientMusicController : MonoBehaviour
     {
         CanvasDialogController.OnDialogueStart -= OnDialogStart;
         CanvasDialogController.OnDialogueEnd -= OnDialogEnd;
-        CanvasDialogController.OnDialogueFavor += OnDialogFavor;
+        CanvasDialogController.OnDialogueFavor -= OnDialogFavor;
 
     }
 
