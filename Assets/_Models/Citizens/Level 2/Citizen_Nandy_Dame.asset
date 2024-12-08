@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Nandy Dame\r"
-    portrait: "\r"
+    portrait: "\rNIMBY"
     avater: "\r"
     description: "Rich NIMBY Lady\r"
     dossier: "Member of 5 Social Clubs, Regular speaker at monthly town hall.\r"

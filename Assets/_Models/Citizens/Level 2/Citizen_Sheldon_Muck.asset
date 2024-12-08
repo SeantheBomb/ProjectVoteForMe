@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Sheldon Muck\r"
-    portrait: "\r"
+    portrait: SomeSchmuckl
     avater: "\r"
     description: "Shmuck\r"
     dossier: "Age 29, Average. Nothing special to report.\r"

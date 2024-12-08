@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Fee Boule\r"
-    portrait: "\r"
+    portrait: "\rSickWoman"
     avater: "\r"
     description: "Sickly Woman\r"
     dossier: "35 years old, significant medical debt. \r"

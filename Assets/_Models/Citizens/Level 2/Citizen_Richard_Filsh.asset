@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Richard Filsh\r"
-    portrait: "\r"
+    portrait: "\rFilthyRich"
     avater: "\r"
     description: "Filthy Rich Man\r"
     dossier: "55 Year old entreprenuer, Multiple business owner, children in private

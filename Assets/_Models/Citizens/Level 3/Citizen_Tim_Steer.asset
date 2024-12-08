@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Tim Steer\r"
-    portrait: "\r"
+    portrait: UnionBoss
     avater: "\r"
     description: "Union Boss, not afraid to get his hands dirty\r"
     dossier: "Union Boss\r"

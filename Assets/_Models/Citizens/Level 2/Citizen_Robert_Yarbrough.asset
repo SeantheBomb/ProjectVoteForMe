@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Robert Yarbrough\r"
-    portrait: "\r"
+    portrait: Robot
     avater: "\r"
     description: "Robot \r"
     dossier: "Age 72, Wealthy inventor, no public appearances in recent months. \r"

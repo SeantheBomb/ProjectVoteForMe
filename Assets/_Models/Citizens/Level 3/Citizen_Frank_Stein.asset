@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Frank Stein\r"
-    portrait: "\r"
+    portrait: Slime
     avater: "\r"
     description: "Slime Monster\r"
     dossier: "25 year old slime mutant, created in lab accident, scares small children,

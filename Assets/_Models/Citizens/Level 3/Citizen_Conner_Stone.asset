@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Conner Stone\r"
-    portrait: "\r"
+    portrait: Stoner
     avater: "\r"
     description: "Beanie, long hair, cyberpunk red LEDs across eyes\r"
     dossier: "Slow witted stoner. \r"

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Henry Harmen\r"
-    portrait: "\r"
+    portrait: ThreateningMan
     avater: "\r"
     description: "Big, threatening \r"
     dossier: "Father of 2, Construction worker, no voting history\r"

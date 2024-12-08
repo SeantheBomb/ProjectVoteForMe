@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Pal Achino\r"
-    portrait: "\r"
+    portrait: MobBoss
     avater: "\r"
     description: "Mob Boss\r"
     dossier: "Crime lord in major gang. \r"

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Papa Pedro\r"
-    portrait: "\r"
+    portrait: Papa
     avater: "\r"
     description: "Jovial Father Type\r"
     dossier: "55 year old, divorced, father to 2. \r"

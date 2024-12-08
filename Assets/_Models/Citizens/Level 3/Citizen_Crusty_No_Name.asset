@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Crusty No Name\r"
-    portrait: "\r"
+    portrait: CrustyPunk
     avater: "\r"
     description: "Crusty Street Punk\r"
     dossier: "20 years old, High School dropout, no known address\r"
