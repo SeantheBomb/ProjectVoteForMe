@@ -7,12 +7,15 @@ using System.IO;
 using UnityEngine.UIElements;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
+using Unity.VisualScripting;
 
 public class CitizenImportToolEditor : EditorWindow
 {
-
+    string inputDirectoryPath;
     string inputFilePath;
     string outputDirectoryPath = "Assets/_Models/Citizens";
+
+    bool bulkImport = false;
 
 
     [MenuItem("Tools/Import Citizen")]
@@ -23,38 +26,71 @@ public class CitizenImportToolEditor : EditorWindow
 
     void OnGUI()
     {
-        // The actual window code goes here
-        if (string.IsNullOrWhiteSpace(inputFilePath))
+        bulkImport = GUILayout.Toggle(bulkImport,new GUIContent("Bulk Import?"));
+
+        if (bulkImport == false)
         {
-            GUILayout.Label("Select a file to import");
+            // The actual window code goes here
+            if (string.IsNullOrWhiteSpace(inputFilePath))
+            {
+                GUILayout.Label("Select a file to import");
+            }
+            else
+            {
+                GUILayout.Label("Import: " + inputFilePath);
+            }
+
+            if (GUILayout.Button("Select File To Import"))
+            {
+                inputFilePath = EditorUtility.OpenFilePanel("Select Citizen Data TSV", "", "tsv");
+            }
         }
         else
         {
-            GUILayout.Label("Import: " + inputFilePath);
-        }
+            // The actual window code goes here
+            if (string.IsNullOrWhiteSpace(inputFilePath))
+            {
+                GUILayout.Label("Select a folder to import");
+            }
+            else
+            {
+                GUILayout.Label("Import: " + inputFilePath);
+            }
 
-        if(GUILayout.Button("Select File To Import"))
-        {
-            inputFilePath = EditorUtility.OpenFilePanel("Select Citizen Data TSV", "", "tsv");
+            if (GUILayout.Button("Select File To Import"))
+            {
+                inputDirectoryPath = EditorUtility.OpenFolderPanel("Select Citizen Data TSV Directory", "", "tsv");
+            }
         }
 
         GUILayout.Label("Output Directory");
         outputDirectoryPath = GUILayout.TextField(outputDirectoryPath);
 
-        if(string.IsNullOrWhiteSpace(inputFilePath) ==false )
+        if(string.IsNullOrWhiteSpace(inputFilePath) ==false || string.IsNullOrWhiteSpace(inputDirectoryPath) == false)
         {
             if (GUILayout.Button("Import"))
             {
-                GenerateCitizen(ImportData());
+                if (bulkImport == false)
+                {
+                    GenerateCitizen(ImportData(inputFilePath));
+                }
+                else
+                {
+                    string[] files = Directory.GetFiles(inputDirectoryPath);
+                    foreach (string file in files)
+                    {
+                        GenerateCitizen(ImportData(file));
+                    }
+                }
             }
         }
     }
 
 
 
-    string[] ImportData()
+    string[] ImportData(string file)
     {
-        string input = File.ReadAllText(inputFilePath);
+        string input = File.ReadAllText(file);
         string[] result = input.Split("\n");
         return result;
     }
@@ -271,29 +307,45 @@ public class CitizenImportToolEditor : EditorWindow
 
     void SaveOrCreateObject(CitizenObject citizen)
     {
-        if (Directory.Exists(outputDirectoryPath)==false)
+        if (!Directory.Exists(outputDirectoryPath))
         {
             Directory.CreateDirectory(outputDirectoryPath);
         }
 
-        string[] find = AssetDatabase.FindAssets(name, new string[] { outputDirectoryPath });
+        string[] guids = AssetDatabase.FindAssets(name, new string[] { outputDirectoryPath });
         bool hasMatch = false;
-        foreach(string s in find)
+
+        foreach (string guid in guids)
         {
-            hasMatch = GetObjectFile(citizen).Equals(Path.GetFileName(s));
-            Debug.Log($"CitizenImport: Check if {GetObjectFile(citizen)} exists, matches {Path.GetFileName(s)}? {hasMatch}");
+            string assetPath = AssetDatabase.GUIDToAssetPath(guid);
+            hasMatch = GetObjectFile(citizen).Equals(Path.GetFileName(assetPath));
+            Debug.Log($"CitizenImport: Check if {GetObjectFile(citizen)} exists, matches {Path.GetFileName(assetPath)}? {hasMatch}");
+
             if (hasMatch)
             {
-                AssetDatabase.SetMainObject(citizen, GetObjectPath(citizen));
+                CitizenObject original = AssetDatabase.LoadAssetAtPath<CitizenObject>(assetPath);
+                UpdateCitizen(ref original, citizen);
+                citizen = original;
                 break;
             }
         }
-        if (hasMatch == false)
+
+        if (!hasMatch)
         {
-            AssetDatabase.CreateAsset(citizen, GetObjectPath(citizen));
+            string newPath = GetObjectPath(citizen);
+            AssetDatabase.CreateAsset(citizen, newPath);
         }
 
         AssetDatabase.SaveAssets();
+    }
+
+
+    void UpdateCitizen(ref CitizenObject target, CitizenObject source)
+    {
+        target.bio = source.bio;
+        target.sentiment = source.sentiment;
+        target.proposals = source.proposals;
+        target.result = source.result;
     }
 
     string ConvertNameToId(string name)

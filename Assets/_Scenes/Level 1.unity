@@ -25979,6 +25979,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.012149823
       objectReference: {fileID: 0}
+    - target: {fileID: 2865578238478929684, guid: 5c7488b6a477a96489807afb62e84afb, type: 3}
+      propertyPath: citizen
+      value: 
+      objectReference: {fileID: 11400000, guid: aacc52babb529d345a8dc3c607e160fb, type: 2}
     - target: {fileID: 7005574590561829117, guid: 5c7488b6a477a96489807afb62e84afb, type: 3}
       propertyPath: m_Name
       value: Citizen_Blake_Caine
