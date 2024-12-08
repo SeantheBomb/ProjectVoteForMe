@@ -18,7 +18,7 @@ public class PlayerInteractionController : MonoBehaviour
     void Start()
     {
         citizensInRange = new List<CitizenBehaviour>();
-        if(canvas == null)canvas = FindObjectOfType<CanvasDialogController>();
+        if(canvas == null)canvas = FindObjectOfType<CanvasDialogController>(true);
         interactPreview.SetActive(false);
     }
 
