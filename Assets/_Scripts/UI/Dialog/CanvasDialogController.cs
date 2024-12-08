@@ -16,6 +16,9 @@ public class CanvasDialogController : MonoBehaviour
 
     public Dictionary<CitizenObject, CitizenCanvasSession> sessions = new Dictionary<CitizenObject, CitizenCanvasSession>();
 
+    public static System.Action OnDialogueStart, OnDialogueEnd;
+    public static System.Action<int> OnDialogueFavor;
+
     public readonly int[,] OpinionMatrix = new int[,]
     {
         {2, 0, -1 },
@@ -33,6 +36,7 @@ public class CanvasDialogController : MonoBehaviour
     {
         gameObject.SetActive (true);
         StartCoroutine(HandleDialog(citizen));
+        OnDialogueStart?.Invoke();
     }
 
     public void Complete(CitizenCanvasSession session = null)
@@ -45,6 +49,11 @@ public class CanvasDialogController : MonoBehaviour
         //bribeSelect.gameObject.SetActive(false);
         //dialogSelect.gameObject.SetActive(false);
         //dialogDisplay.gameObject.SetActive(false);
+
+        if(gameObject.activeSelf)
+        {
+            OnDialogueEnd?.Invoke();
+        }
 
         gameObject.SetActive (false);
     }
@@ -70,6 +79,7 @@ public class CanvasDialogController : MonoBehaviour
             yield return new WaitUntil(() => dialogSelect.IsSubmitted);
             //var response = citizen.proposals[i];
             int sentiment = ResolveProposal(citizen.proposals[i], citizen.sentiment, dialogSelect.option, dialogSelect.sentiment, ref session);
+            OnDialogueFavor?.Invoke(sentiment);
             string response = GetSentimentResponse(citizen.proposals[i], sentiment);
             GameManager.CurrentSession.AddProposalOption(proposal, dialogSelect.option);
             dialogDisplay.Show(GenerateDisplay(citizen, response, sentiment));
