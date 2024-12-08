@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9fae90534e5632419ccf556f42e5470, type: 3}
+  m_Name: Level One Music
+  m_EditorClassIdentifier: 
+  overworldMusic: {fileID: 8300000, guid: 8ecbeb73031c9fb429b7c1b782b51985, type: 3}
+  dialogMusic: {fileID: 8300000, guid: f77c9cfab3e3ff549a9183fd2d208d3b, type: 3}
+  positiveSentiment: {fileID: 8300000, guid: 585131740aea4484cb8d317c7ad9ddb1, type: 3}
+  negativeSentiment: {fileID: 8300000, guid: d5f2b75ee0751d4419d64ce69214f778, type: 3}
+  neutralSentiment: {fileID: 8300000, guid: 3ef9a0f93ceebb14a82ef37d6f53d796, type: 3}
