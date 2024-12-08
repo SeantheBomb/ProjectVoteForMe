@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: LevelConfig
   m_EditorClassIdentifier: 
   levels:
-  - cohort: {fileID: 11400000, guid: 95cbba43de52e404db7b79b598ba2a1b, type: 2}
+  - cohort: {fileID: 11400000, guid: 57a380889b31a34439f61776f1fb48e3, type: 2}
+  - cohort: {fileID: 11400000, guid: 90fc3fd42c38fd04dbee7f3ff92a9501, type: 2}
+  - cohort: {fileID: 11400000, guid: a683dbd44f471aa458b37995a18939d2, type: 2}

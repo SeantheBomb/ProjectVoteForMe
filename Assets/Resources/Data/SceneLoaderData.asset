@@ -15,4 +15,6 @@ MonoBehaviour:
   MainMenuScene: Main Menu
   NextLevelScene: Macro Menu
   levelScenes:
-  - SampleScene
+  - Level 1
+  - Level 2
+  - Level 3

@@ -145,6 +145,15 @@ public class GameSession
         _currentLevelIndex = index;
     }
 
+    public float GetConsistensyScore()
+    {
+        float score = 0;
+        foreach(var history in proposalHistory)
+        {
+            score += history.GetConsistencyScore();
+        }
+        return score / proposalHistory.Count;
+    }
     //public static GameSession LoadSave(string json)
     //{
     //    return JsonUtility.FromJson<GameSession>(json);

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf7b9eaf2777c274a9dd6a20841fc29a, type: 3}
+  m_Name: Level 3
+  m_EditorClassIdentifier: 
+  citizens:
+  - {fileID: 11400000, guid: 8359ec8b6b9ea7a4f8c19d88c5094d31, type: 2}
+  - {fileID: 11400000, guid: 1a3b1a5997e82df4d9de6bca00f4e61f, type: 2}
+  - {fileID: 11400000, guid: fa6b46c6b57ca9b4cb049fea7d00bb7a, type: 2}
+  - {fileID: 11400000, guid: da0c78ae8d151c045a69d27752f263bb, type: 2}
+  - {fileID: 11400000, guid: 73549ac057d061e4581c0015f9483874, type: 2}
+  - {fileID: 11400000, guid: b3ecb1f5de39d7d4cb182bd39d02e17d, type: 2}
+  - {fileID: 11400000, guid: 0eeffbec28bd5a64aa4cc78e3c2b98f0, type: 2}

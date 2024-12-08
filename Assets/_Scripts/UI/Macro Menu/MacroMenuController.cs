@@ -8,20 +8,22 @@ public class MacroMenuController : MonoBehaviour
 
     public PollingResults[] StartingResults = new PollingResults[]
     {
-        new PollingResults(50,50),
-        new PollingResults (50,50),
-        new PollingResults(50,50)
+        new PollingResults(20,20),
+        new PollingResults (10,10),
+        new PollingResults(30,30)
     };
 
     public PollingResults[] GetCurrentResults()
     {
         LevelSession[] levels = GameManager.CurrentSession.levelSessions.ToArray();
         PollingResults[] results = new PollingResults[StartingResults.Length];
+        float consistencyScore = GameManager.CurrentSession.GetConsistensyScore();
         for (int i = 0; i < results.Length; i++)
         {
             if(i < levels.Length)
             {
                 results[i] = new PollingResults(StartingResults[i], levels[i].citizenSessions);
+                //results[i].playerTally = Mathf.RoundToInt(results[i].playerTally * consistencyScore);
             }
             else
             {
@@ -71,7 +73,7 @@ public class PollingResults
     {
         this.playerTally = start.playerTally;
         this.opposingTally= start.opposingTally;
-        playerTally += sessions.Count((s) => s.IsFavored());
+        playerTally += Mathf.RoundToInt(sessions.Count((s) => s.IsFavored()) * GameManager.CurrentSession.GetConsistensyScore());
         opposingTally += sessions.Count((s) => s.IsFavored() == false);
     }
 }
