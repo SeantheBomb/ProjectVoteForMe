@@ -21,7 +21,7 @@ public class DossierBioController : MonoBehaviour
             Hide();
             return;
         }
-        portrait.sprite = PortraitLoader.GetPortrait(citizen.bio.portrait);
+        portrait.sprite = PortraitLoader.GetPortrait(citizen.bio.portrait).neutral;
         title.text = citizen.bio.name;
         description.text = citizen.bio.description;
         dossier.text = citizen.bio.dossier;

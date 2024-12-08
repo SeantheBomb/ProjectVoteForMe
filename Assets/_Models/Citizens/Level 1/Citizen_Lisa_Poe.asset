@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Lisa Poe\r"
-    portrait: "\r"
+    portrait: Police
     avater: "\r"
     description: "Police uniform.\r"
     dossier: "Police officer of 25 years. \r"

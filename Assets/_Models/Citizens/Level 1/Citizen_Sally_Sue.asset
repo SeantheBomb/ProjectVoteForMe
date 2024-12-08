@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Sally Sue\r"
-    portrait: "\r"
+    portrait: Nurse
     avater: "\r"
     description: "Nurse Hat and scrubs, Blonde Hair. \r"
     dossier: "Nurse at a retirement home.\r"

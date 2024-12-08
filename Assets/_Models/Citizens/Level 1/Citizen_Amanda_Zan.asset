@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Amanda Zan\r"
-    portrait: "\r"
+    portrait: Shoppaholic
     avater: "\r"
     description: "Shopaholic\r"
     dossier: "Outstanding credit card debts on 4 cards.\r"

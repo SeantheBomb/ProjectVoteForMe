@@ -976,6 +976,7 @@ MonoBehaviour:
   header: {fileID: 6165190545219477553}
   playerPosition: {fileID: 5635347863093030721}
   citizenPosition: {fileID: 4694495393589732429}
+  portrait: {fileID: 0}
   IsComplete: 0
 --- !u!1 &1818116380144324235
 GameObject:
@@ -2786,7 +2787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.504717, g: 0.504717, b: 0.504717, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

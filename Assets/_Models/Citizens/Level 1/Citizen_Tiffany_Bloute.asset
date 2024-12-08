@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Tiffany Bloute\r"
-    portrait: "\r"
+    portrait: "\rTikTokGirl"
     avater: "\r"
     description: "Tik Tok Kid\r"
     dossier: "18 Years old, recent registered to vote.\r"

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a536e7c81f299d6499ee793ea243685d, type: 3}
+  m_Name: ThreateningMan
+  m_EditorClassIdentifier: 
+  neutral: {fileID: -6299774452222412428, guid: 5cfa67cf87fabe14288166f141da26c8, type: 3}
+  happy: {fileID: 7890696496523066392, guid: 5cfa67cf87fabe14288166f141da26c8, type: 3}
+  sad: {fileID: -5666078835283520881, guid: 5cfa67cf87fabe14288166f141da26c8, type: 3}

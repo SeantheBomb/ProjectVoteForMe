@@ -65,9 +65,10 @@ public class CanvasDialogController : MonoBehaviour
             dialogSelect.Show(proposal);
             yield return new WaitUntil(() => dialogSelect.IsSubmitted);
             //var response = citizen.proposals[i];
-            string response = ResolveProposal(citizen.proposals[i], citizen.sentiment, dialogSelect.option, dialogSelect.sentiment, ref session);
+            int sentiment = ResolveProposal(citizen.proposals[i], citizen.sentiment, dialogSelect.option, dialogSelect.sentiment, ref session);
+            string response = GetSentimentResponse(citizen.proposals[i], sentiment);
             GameManager.CurrentSession.AddProposalOption(proposal, dialogSelect.option);
-            dialogDisplay.Show(GenerateDisplay(citizen, response));
+            dialogDisplay.Show(GenerateDisplay(citizen, response, sentiment));
             yield return new WaitUntil(() => dialogDisplay.IsComplete);
         }
         if(playerCanvas.money > 0)
@@ -84,7 +85,7 @@ public class CanvasDialogController : MonoBehaviour
     }
 
 
-    string ResolveProposal(CitizenProposal proposal, CitizenSentiment attitude, ProposalOption option, ProposalSentiment sentiment, ref CitizenCanvasSession session)
+    int ResolveProposal(CitizenProposal proposal, CitizenSentiment attitude, ProposalOption option, ProposalSentiment sentiment, ref CitizenCanvasSession session)
     {
 
         int proposalOpinion;
@@ -124,7 +125,12 @@ public class CanvasDialogController : MonoBehaviour
 
         session.opinions.Add(totalOpinion);
 
-        switch(totalOpinion)
+        return totalOpinion;
+    }
+
+    string GetSentimentResponse(CitizenProposal proposal, int sentiment)
+    {
+        switch (sentiment)
         {
             case -2:
                 return proposal.minusTwo;
@@ -147,13 +153,14 @@ public class CanvasDialogController : MonoBehaviour
     //}
 
 
-    DisplayDialog GenerateDisplay(CitizenObject citizen, string dialog)
+    DisplayDialog GenerateDisplay(CitizenObject citizen, string dialog, int sentiment = 0)
     {
         DisplayDialog display = new DisplayDialog();
         display.title = citizen.bio.name;
         display.portrait = citizen.bio.portrait;
         display.isPlayer = false;
         display.dialog = dialog.Split('\n');
+        display.sentiment = sentiment;
         return display;
     }
 

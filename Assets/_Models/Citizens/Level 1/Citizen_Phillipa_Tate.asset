@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Phillipa Tate\r"
-    portrait: "\r"
+    portrait: Teacher
     avater: "\r"
     description: "School Teacher\r"
     dossier: "59 Year old Elementary school teacher, taught you.\r"

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Pamela Peterson\r"
-    portrait: "\r"
+    portrait: OldWoman
     avater: "\r"
     description: "Old senile woman who thinks the player is her nephew. \r"
     dossier: "87 Year old woman, retired. No known affiliations. \r"

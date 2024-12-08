@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Blake Caine\r"
-    portrait: "\r"
+    portrait: "\rCryptoGuy"
     avater: "\r"
     description: "Crypto Nerd\r"
     dossier: "23 Years Old, multiple outstanding debts.\r"

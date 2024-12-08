@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a536e7c81f299d6499ee793ea243685d, type: 3}
+  m_Name: Nurse
+  m_EditorClassIdentifier: 
+  neutral: {fileID: -6328682999987165594, guid: f62cbf9fca8e0b041bd15196baecb467, type: 3}
+  happy: {fileID: 7554384570970158397, guid: f62cbf9fca8e0b041bd15196baecb467, type: 3}
+  sad: {fileID: 8840461918244318861, guid: f62cbf9fca8e0b041bd15196baecb467, type: 3}

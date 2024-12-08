@@ -15,6 +15,8 @@ public class DisplayDialogController : MonoBehaviour
 
     public Transform playerPosition, citizenPosition;
 
+    public CitizenPortraitObject portrait;
+
 
     public bool IsComplete;
 
@@ -33,7 +35,8 @@ public class DisplayDialogController : MonoBehaviour
     {
         IsComplete = false;
         image.transform.position = dialog.isPlayer ? playerPosition.position : citizenPosition.position;
-        image.sprite = PortraitLoader.GetPortrait(dialog.portrait);
+        portrait = PortraitLoader.GetPortrait(dialog.portrait);
+        image.sprite = GetSentiment(dialog.sentiment);
         header.text = dialog.title;
         gameObject.SetActive(true);
         StartCoroutine(Display(dialog));
@@ -92,6 +95,19 @@ public class DisplayDialogController : MonoBehaviour
         Complete();
     }
 
+    public Sprite GetSentiment(int sentiment)
+    {
+        if (portrait == null)
+            return null;
+
+        if (sentiment > 0)
+            return portrait.happy;
+        if(sentiment < 0)
+            return portrait.sad;
+        else
+            return portrait.neutral;
+    }
+
     //bool IsAcknowledged()
     //{
     //    return Input.GetMouseButton(0) || Input.GetKey(KeyCode.Return) || Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.E);
@@ -129,6 +145,7 @@ public class DisplayDialog
     public string title;
     public string portrait;
     public bool isPlayer;
+    public int sentiment;
 
     [TextArea]
     public string[] dialog;
