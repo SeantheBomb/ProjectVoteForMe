@@ -73,7 +73,7 @@ public class PollingResults
     {
         this.playerTally = start.playerTally;
         this.opposingTally= start.opposingTally;
-        playerTally += Mathf.RoundToInt(sessions.Count((s) => s.IsFavored()) * GameManager.CurrentSession.GetConsistensyScore());
+        playerTally += sessions.Count((s) => s.IsFavored());
         opposingTally += sessions.Count((s) => s.IsFavored() == false);
     }
 }
