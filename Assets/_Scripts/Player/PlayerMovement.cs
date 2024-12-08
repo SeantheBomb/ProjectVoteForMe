@@ -8,11 +8,16 @@ public class PlayerMovement : MonoBehaviour
     public float moveTime = 0.25f;
 
     bool isMoving;
+    MoveDirection direction;
+    bool moveInput;
+
+    Animator animator;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponentInChildren<Animator>();
         ValidatePosition();
     }
 
@@ -22,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
         if (isMoving)
             return;
 
-
+        moveInput = true;
         if(Input.GetKey(KeyCode.W))
         {
             StartCoroutine(Move(MoveDirection.Up));
@@ -39,6 +44,33 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(Move(MoveDirection.Left));
         }
+        else
+        {
+            moveInput = false;
+        }
+    }
+
+    private void LateUpdate()
+    {
+        if(direction == MoveDirection.Down)
+        {
+            animator.Play(moveInput ? "Walk Front" : "Idle Front");
+        }
+        if(direction == MoveDirection.Up)
+        {
+            animator.Play(moveInput ? "Walk Back" : "Idle Back");
+        }
+        if (direction == MoveDirection.Left)
+        {
+            animator.Play(moveInput ? "Walk Side" : "Idle_Side");
+            animator.transform.localScale = new Vector3(-1f, 1f, 1f);
+
+        }
+        if(direction == MoveDirection.Right)
+        {
+            animator.Play(moveInput ? "Walk Side" : "Idle_Side");
+            animator.transform.localScale = new Vector3(1f, 1f, 1f);
+        }
     }
 
     void ValidatePosition()
@@ -53,6 +85,7 @@ public class PlayerMovement : MonoBehaviour
     {
         isMoving = true;
         //float distance = 1;
+        this.direction = direction;
         float speed = 1 / moveTime;
         Vector3 dir = GetVectorFromDirection(direction);
 
