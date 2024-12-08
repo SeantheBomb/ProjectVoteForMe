@@ -21,7 +21,7 @@ public class MainMenuController : MonoBehaviour
 
     public void StartGame()
     {
-        GameManager.Instance.CreateSession();
+        GameManager.Instance.CreateSession(input.text);
         SceneLoader.LoadNextLevelScene();
     }
 }
