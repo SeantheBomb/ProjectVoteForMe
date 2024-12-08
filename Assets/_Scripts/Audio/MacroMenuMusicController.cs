@@ -17,7 +17,7 @@ public class MacroMenuMusicController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (macro.IsWinning())
+        if (macro.IsWinning() || GameManager.CurrentSession.CurrentLevelIndex == -1)
         {
             source.clip = winningTrack;
         }

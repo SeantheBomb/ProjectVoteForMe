@@ -41,11 +41,7 @@ public class CanvasDialogController : MonoBehaviour
 
     public void Complete(CitizenCanvasSession session = null)
     {
-        if(session != null)
-        {
-            GameManager.CurrentLevel.citizenSessions.Add(session);
-            CitizenCanvasSession.OnSessionComplete?.Invoke(session);
-        }
+        
         //bribeSelect.gameObject.SetActive(false);
         //dialogSelect.gameObject.SetActive(false);
         //dialogDisplay.gameObject.SetActive(false);
@@ -93,8 +89,14 @@ public class CanvasDialogController : MonoBehaviour
 
         }
         sessions.Add(citizen, session);
-        OnDialogueFavor?.Invoke(session.IsFavored() ? 1 : -1);
-        dialogDisplay.Show(GenerateDisplay(citizen, session.IsFavored() ? citizen.result.Yes : citizen.result.No));
+        bool isFavored = session.IsFavored();
+        OnDialogueFavor?.Invoke(isFavored ? 1 : -1);
+        if (session != null)
+        {
+            GameManager.CurrentLevel.citizenSessions.Add(session);
+            CitizenCanvasSession.OnSessionComplete?.Invoke(session);
+        }
+        dialogDisplay.Show(GenerateDisplay(citizen, isFavored ? citizen.result.Yes : citizen.result.No, isFavored ? 1 : -1));
         yield return new WaitUntil(()=>dialogDisplay.IsComplete);
         Complete(session);
     }
@@ -217,7 +219,7 @@ public class CitizenCanvasSession
 
         if (isBribed)
         {
-            if(rawOpinion > 3 && rawOpinion < 6)
+            if(rawOpinion > 2 && rawOpinion < 6)
             {
                 return 10;
             }

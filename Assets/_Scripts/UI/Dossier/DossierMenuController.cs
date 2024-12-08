@@ -7,7 +7,7 @@ public class DossierMenuController : MonoBehaviour
 
     public GameObject rootPanel;
     public Transform navigationPanel;
-    public DossierToggleButton toggle;
+    public DossierToggleButton[] toggle;
     public DossierNavigationButton navPrefab;
     public DossierBioController bioDisplay;
 
@@ -35,21 +35,24 @@ public class DossierMenuController : MonoBehaviour
             DossierNavigationButton navButton = Instantiate(navPrefab, navigationPanel);
             navButton.Setup(citizen, this);
         }
-        toggle.Setup(this);
+        foreach(var t in toggle)
+            t.Setup(this);
         isInitialized = true;
     }
 
     public void Show()
     {
         bioDisplay.Hide();
-        toggle.SetShown();
+        foreach (var t in toggle)
+            t.SetShown();
         rootPanel.SetActive(true);
     }
 
 
     public void Hide()
     {
-        toggle.SetHidden();
+        foreach (var t in toggle)
+            t.SetHidden();
         rootPanel.SetActive(false);
     }
 

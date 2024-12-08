@@ -15,8 +15,8 @@ MonoBehaviour:
   intro:
   - 'Happy election day, Mr. [Name]! Today''s our last day on the campaign, and we
     are neck and neck with the opposition. It''s time to go bang down some doors. '
-  - 'Our research has found the 3 neighborhoods with the most undecided voters. This
-    dossier will provide the names and detail of each prospect. '
+  - Our research has found the 3 neighborhoods with the most undecided voters. Open
+    your dossier to read details for each voter and form your plan of attack.
   - 'We live in a diverse city, and our citizens don''t agree on every policy topic.
     It might be wise to pay attention to who your talking to when you make your promises. '
   - Getting the right tone for the person is also vital! Remember, politics is about
@@ -33,10 +33,14 @@ MonoBehaviour:
       Keep that energy going. '
     losingDialog:
     - 'We may want to rethink our strategy, you''re starting to trail in the polls. '
+    - Make sure to review the dossier for each citizen. That will help you understand
+      which proposals they may favor.
   - winningDialog:
     - 'You''re pulling ahead! We might just cross this finish line. '
     losingDialog:
     - Numbers are not looking so hot so far. Maybe try and be more... relatable?
+    - Don't worry, reading people is hard. Here's a trick. If someone responds well
+      to something, stick with it.
   - winningDialog:
     - You did it, Mr. Mayor-elect! The Polls are in and show a decisive victory.
       Four more years!

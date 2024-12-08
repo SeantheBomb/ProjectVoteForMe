@@ -177,7 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   citizen: {fileID: 11400000, guid: aacc52babb529d345a8dc3c607e160fb, type: 2}
   Avatar: {fileID: 7331059533404642433}
-  knock: {fileID: 8300000, guid: c1a74a48624e471498b8ab06bf699918, type: 3}
+  knock: {fileID: 8300000, guid: 3cb3370e793b6a141a9b18aea0d46d1e, type: 3}
   audioSource: {fileID: 5940222346281630057}
 --- !u!58 &71943143475057267
 CircleCollider2D:
