@@ -20,6 +20,12 @@ public class SelectBribeController : MonoBehaviour
         IsSubmitted = false;
     }
 
+    public void Hide()
+    {
+        gameObject.SetActive(false);
+        IsSubmitted=false;
+    }
+
 
     public void AttemptBribe()
     {

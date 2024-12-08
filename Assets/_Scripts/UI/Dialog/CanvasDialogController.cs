@@ -42,6 +42,10 @@ public class CanvasDialogController : MonoBehaviour
             GameManager.CurrentLevel.citizenSessions.Add(session);
             CitizenCanvasSession.OnSessionComplete?.Invoke(session);
         }
+        bribeSelect.gameObject.SetActive(false);
+        dialogSelect.gameObject.SetActive(false);
+        dialogDisplay.gameObject.SetActive(false);
+
         gameObject.SetActive (false);
     }
 
