@@ -12,12 +12,14 @@ public class PlayerMovement : MonoBehaviour
     bool moveInput;
 
     Animator animator;
+    Rigidbody2D rb;
 
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
+        rb = GetComponent<Rigidbody2D>();
         ValidatePosition();
     }
 
@@ -90,10 +92,12 @@ public class PlayerMovement : MonoBehaviour
         Vector3 dir = GetVectorFromDirection(direction);
 
 
-        for (float i = 0; i < moveTime; i += Time.deltaTime)
+        for (float i = 0; i < moveTime; i += Time.fixedDeltaTime)
         {
-            transform.position += dir * speed * Time.deltaTime;
-            yield return null;
+            //transform.position += dir * speed * Time.deltaTime;
+            yield return new WaitForFixedUpdate();
+
+            rb.MovePosition(rb.transform.position + dir * speed * Time.fixedDeltaTime);
         }
 
         ValidatePosition();
