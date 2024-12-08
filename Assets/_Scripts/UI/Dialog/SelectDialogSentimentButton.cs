@@ -18,7 +18,7 @@ public class SelectDialogSentimentButton : MonoBehaviour
         button = GetComponent<Button>();
         text = GetComponentInChildren<TMP_Text>();
         controller.OnSentimentSelected += OnSentimentSelected;
-        text.text = sentiment.ToString();
+        //text.text = sentiment.ToString();
         this.sentiment = sentiment;
         button.onClick.AddListener(() => controller.SelectSentiment(this));
     }
