@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9fae90534e5632419ccf556f42e5470, type: 3}
-  m_Name: Level One Music
+  m_Name: Level Music 1
   m_EditorClassIdentifier: 
   overworldMusic: {fileID: 8300000, guid: 8ecbeb73031c9fb429b7c1b782b51985, type: 3}
   dialogMusic: {fileID: 8300000, guid: f77c9cfab3e3ff549a9183fd2d208d3b, type: 3}
