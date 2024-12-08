@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,18 @@ public class PlayerInteractionController : MonoBehaviour
         citizensInRange = new List<CitizenBehaviour>();
         if(canvas == null)canvas = FindObjectOfType<CanvasDialogController>(true);
         interactPreview.SetActive(false);
+        CanvasDialogController.OnDialogueEnd += OnDialogEnd;
+    }
+
+    private void OnDestroy()
+    {
+        CanvasDialogController.OnDialogueEnd -= OnDialogEnd;
+    }
+
+    private void OnDialogEnd()
+    {
+        if (currentCitizen != null)
+            currentCitizen.EndDialog();
     }
 
     private void FixedUpdate()
@@ -51,6 +64,7 @@ public class PlayerInteractionController : MonoBehaviour
         }
         currentCitizen = citizensInRange.First();
         canvas.Show(currentCitizen.citizen);
+        currentCitizen.StartDialog();
     }
 
 
