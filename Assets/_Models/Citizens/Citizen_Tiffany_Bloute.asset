@@ -28,7 +28,8 @@ MonoBehaviour:
   proposals:
   - positive: "Headliner\r"
     negative: "Straightforward\r"
-    plusOne: "Yeah I was just watching a video about that online. \r"
+    plusOne: "Yeah I was just watching a video about that online. [N/] So are you
+      just like... all business?\r"
     plusTwo: "Woah, yeah I was just watcing a video about that online! Did you see
       the one about that robber who stole a baby in a break in? \r"
     zero: "Oh. I don't know anything about that. [/N] Can we be quick, My Mom says

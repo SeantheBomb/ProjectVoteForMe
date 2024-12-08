@@ -32,7 +32,8 @@ MonoBehaviour:
     plusOne: "Wow, that almost sounds made up!\r"
     plusTwo: "Wow, that almost sounds made up! But my new best friend wouldn't do
       that to me. \r"
-    zero: "Well, of course I always vote for my friends. And we're friends now, right?\r"
+    zero: "Well, of course I always vote for my friends. And we're friends now, right?
+      [/N] Lets just have some fun together. \r"
     minusOne: "What's the hurry? Why don't you hang around for a while.\r"
     minusTwo: "Come on man, wouldn't politics be better without all of that aggression?\r"
   - positive: "Hospital\r"

@@ -17,7 +17,7 @@ MonoBehaviour:
     portrait: "SomeSchmuckl\r"
     avater: "\r"
     description: "Shmuck\r"
-    dossier: "Age 29, Average. Sick Grandman. Nothing special to report.\r"
+    dossier: "Age 29, Average. Sick Grandmother. Nothing special to report.\r"
   sentiment:
     positive: "Humerous\r"
     negative: "Intimidating\r"
@@ -26,11 +26,13 @@ MonoBehaviour:
   proposals:
   - positive: "Deceptive\r"
     negative: "Question\r"
-    plusOne: "Wow, I can hardly believe that. I'll need to tell my granny that one!\r"
+    plusOne: "Wow, I can hardly believe that. I'll need to tell my granny about that
+      one. \r"
     plusTwo: "Woah, that's funny it's hard to believe! I'll need to share that one
       with my granny.\r"
     zero: "Yeah okay, so you're running for Mayor, right? I saw your poster on my
-      way to visiting my granny.\r"
+      way to visiting my granny. [/N] Don't take this the wrong way, but I'm considering
+      the other guy. He's just so funny!\r"
     minusOne: "No offense but like... arn't you supposed to already know?\r"
     minusTwo: "Hey man, I didn't do anything I swear!\r"
   - positive: "Hospital\r"

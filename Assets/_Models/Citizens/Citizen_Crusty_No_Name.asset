@@ -26,14 +26,15 @@ MonoBehaviour:
   proposals:
   - positive: "Deceptive\r"
     negative: "Headliner\r"
-    plusOne: "Spitting facts, my guy. I'll hear you out. \r"
+    plusOne: "Spitting facts, my guy. Say it with your chest!  [/N] You gotta be
+      tough to run these streets.\r"
     plusTwo: "No way. That's pretty far out, I hardly believe it!\r"
     zero: "Can you speed this up? I've got better things to do. \r"
     minusOne: "It's all flashy lights, dude. Do you have anything real to say?\r"
     minusTwo: "Can I be honest? You're super boring. \r"
   - positive: "Hospital\r"
     negative: "School\r"
-    plusOne: "If you think you can pull that off, more power to ya. \r"
+    plusOne: "If you think you have the spine for it, more power to ya. \r"
     plusTwo: "Make it happen, friend. \r"
     zero: "I mean... maybe? I guess?\r"
     minusOne: "No way man. Kids spend too much time in school already. Gets in the
@@ -42,7 +43,7 @@ MonoBehaviour:
       and you can't make me!\r"
   - positive: "Rich Raise\r"
     negative: "Raise Everyone\r"
-    plusOne: "Sounds pretty rad to me. \r"
+    plusOne: "Sounds pretty rad to me, but you gotta have guts. \r"
     plusTwo: "That's the idea, get your taxes from the people who can afford em!\r"
     zero: "As long as someone else has to pay it. \r"
     minusOne: "I'm gonna tell you right now, I aint gonna be the one to build you

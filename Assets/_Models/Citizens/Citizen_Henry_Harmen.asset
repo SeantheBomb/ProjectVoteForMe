@@ -27,30 +27,30 @@ MonoBehaviour:
   proposals:
   - positive: "Question\r"
     negative: "Headliner\r"
-    plusOne: "Do you really wan't to know what I think? Huh, that's new. I need to
-      feed my kids though, so can you be quick?\r"
+    plusOne: "You wan't to know what I think? Huh, that's new. I need to feed my
+      kids though, so can you be quick?\r"
     plusTwo: "Huh, that's a really good question! I don't know. I need to feed my
-      kids, so can you be quick?\r"
+      kids, can you be quick?\r"
     zero: "No. And tell your people to stop calling me. \r"
     minusOne: "Don't you have better things to do? Get out of here. \r"
     minusTwo: "I wan't to make something clear to you. I am very armed.\r"
   - positive: "School\r"
     negative: "Prison\r"
     plusOne: "Pefect, that's right on my way to to work. You'd make it much easier
-      to drop the kids off. \r"
-    plusTwo: "I'll tell you what, that would be a great place for a new school! It's
-      right on my way to work, make it much easier to drop off the kids. \r"
+      to drop the kids off. [/N] Now, get off my porch unless your here to fight.\r"
+    plusTwo: "I'll tell you what, that would be a great place for a new school! [/N]
+      It's right on my way to work, make it much easier to drop off the kids. \r"
     zero: "You really don't get what's important, do you?\r"
     minusOne: "Yeah, sounds right. Another place to lock up innocent people. \r"
     minusTwo: "Is it a fight your looking for? Because you came to the right place.
       \r"
   - positive: "Tax Same\r"
     negative: "Raise Everyone\r"
-    plusOne: "If I were you, I'd campaign on less taxes. But I get it, why rock the
-      boat. \r"
+    plusOne: "If I were you, I'd campaign on less taxes. [/N] But I get it, How's
+      a spinless guy like you going to rock the boat. \r"
     plusTwo: "Yeah, I suppose I could keep paying what I'm paying. For now, atleast.
       \r"
-    zero: "Are you done yet?\r"
+    zero: "Are you done yet? [/N] How's a coward like you ever going to be mayor?\r"
     minusOne: "I already pay my fair share. I won't pay another cent. \r"
     minusTwo: "Over my cold, dead, body. \r"
   - positive: "Kind\r"
@@ -62,6 +62,6 @@ MonoBehaviour:
     minusTwo: "Walk your powerful ass off my porch then. \r"
   result:
     Yes: "Thank you for coming by. From your posters you looked like an idiot, but
-      you might be alright.\r"
+      you might be alright. [/N] You have my vote, [Name].\r"
     No: 'Hell no I won''t vote for you. If you want to survive to election day, start
       walking. '

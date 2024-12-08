@@ -23,7 +23,7 @@ MonoBehaviour:
     negative: "Casual\r"
     intro: "If you are here to sell something, be aware I don't use fiat currency
       anymore. \r"
-    startingOpinion: 2
+    startingOpinion: 3
   proposals:
   - positive: "Straightforward\r"
     negative: "Headliner\r"
@@ -43,17 +43,17 @@ MonoBehaviour:
       you could get the stores to accept my coin?\r"
     plusTwo: "You seem like a smart person. Your exactly the kind of investor I've
       been looking for. \r"
-    zero: "I really don't think you see what's important. If I was running for Mayor,
-      I'd be focused on fiscal and monitary policy, that's what the people are focued
-      on. \r"
+    zero: "I really don't think you see what's important. [/N] If I was running for
+      Mayor, I'd be focused on fiscal and monitary policy, that's what the people
+      are focused on. \r"
     minusOne: "First you lock up the currency, then the people. I know how you government
       types are. \r"
     minusTwo: "Get out of here. First you lock up the currency, then the people.
       I know how you government types are. \r"
   - positive: "Rich Lower\r"
     negative: "Tax Same\r"
-    plusOne: "Once my coin takes off, I want to keep as much of my gains as possible.
-      I'd vote for more taxes for future me. \r"
+    plusOne: "No way. I'll be a millionaire soon, so I say NO taxes on the rich!
+      \r"
     plusTwo: "I appreciate you looking out for me. Once my coin takes off, I want
       to keep as much of my gains as possible. \r"
     zero: "You're talking about taxes, but I want to talk about investments. Specifically

@@ -29,7 +29,7 @@ MonoBehaviour:
   - positive: "Question\r"
     negative: "Deceptive\r"
     plusOne: "That's a very good question. You must have thought very hard about
-      it. \r"
+      it. [/N] Stand up straight when you talk to me. \r"
     plusTwo: "You're asking the right person! I'll have my secretary send you a full
       report. \r"
     zero: "Like I said, I'm a busy man. \r"

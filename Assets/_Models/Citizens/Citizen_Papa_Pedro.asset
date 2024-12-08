@@ -27,10 +27,11 @@ MonoBehaviour:
   proposals:
   - positive: "Headliner\r"
     negative: "Straightforward\r"
-    plusOne: "Are you that young man running for mayor? I hope you get there fast!\r"
+    plusOne: "Are you that young man running for mayor? I hope you get there fast!
+      [/N] Why so serious, sonny?\r"
     plusTwo: "That's hilarious! Are you that young man running for mayor? I hope
       you get there fast\r"
-    zero: "Why so serious, sonny?\r"
+    zero: "It's [Name], right? Didn't you go to school with my oldest son?\r"
     minusOne: "Come on sonny, don't take things so serious.\r"
     minusTwo: "Hey now, there's no need for all of that. \r"
   - positive: "School\r"
@@ -46,7 +47,8 @@ MonoBehaviour:
       \r"
   - positive: "Tax Same\r"
     negative: "Rich Raise\r"
-    plusOne: "I suppose that's the best thing, after not paying taxes at all!\r"
+    plusOne: "I'd rather not pay them at all, but I suppose that's the next best
+      thing.\r"
     plusTwo: "That'd be great. You're cheering me up, my grief counselor died the
       other day. [/N] Thing is, he was so good at his job, I hardly care.\r"
     zero: "Taxes are taxes I suppose. Nothing to joke about. \r"
@@ -54,10 +56,10 @@ MonoBehaviour:
     minusTwo: "Well I'm not sure what you expect me to do about it.\r"
   - positive: "Kind\r"
     negative: "Honest\r"
-    plusOne: "This was a nice way to kill time!  I had plans to meet a girl to work
-      out earlier, but she didn't show. [/N] I don't think the two of us are going
-      to work out. \r"
-    plusTwo: "I'm so glad you stopped by. I had plans to meet a girl to work out
+    plusOne: "This was a nice way to kill time!  I had plans to meet a girl to excercise
+      earlier, but she didn't show. [/N] I don't think the two of us are going to
+      work out. \r"
+    plusTwo: "I'm so glad you stopped by. I had plans to meet a girl to excercise
       earlier, but she didn't show. [/N] I don't think the two of us are going to
       work out. \r"
     zero: "Okay. Hey can I ask you a questions? Am I funny? Last week I put 10 puns

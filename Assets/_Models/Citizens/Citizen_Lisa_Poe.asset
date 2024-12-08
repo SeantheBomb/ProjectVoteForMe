@@ -27,7 +27,8 @@ MonoBehaviour:
   proposals:
   - positive: "Question\r"
     negative: "Deception\r"
-    plusOne: "That's a real thinker. \r"
+    plusOne: "That's a real thinker. [/N] Come on, I'm off shift. We're both civil
+      servants, tell me what you really thing. \r"
     plusTwo: "You know something, I've never thought about that. I'm glad to see
       you have!\r"
     zero: "Like I said, I'm tired. Is there something you need?\r"
@@ -36,7 +37,8 @@ MonoBehaviour:
       off my porch. \r"
   - positive: "Prison\r"
     negative: "School\r"
-    plusOne: "I appreciate your efforts keeping me employed. \r"
+    plusOne: "I appreciate your efforts keeping me employed. [/N] I know pandering
+      when I see it. come on, tell me what you really think. \r"
     plusTwo: "Between you and me, that would be perfect. We just finished filling
       up the last prison!\r"
     zero: "Really? That's what you think?\r"
@@ -60,8 +62,8 @@ MonoBehaviour:
       Thanks for proving me wrong. \r"
     zero: "Are you done yet?\r"
     minusOne: "Look at the big scary politician. Good luck. \r"
-    minusTwo: "It's hilarious that you think real power is in city hall. Why don't
-      you join me on patrol tomorrow, I'll show you who has power. \r"
+    minusTwo: "It's hilarious that you think real power is in city hall. [/N] Why
+      don't you join me on patrol tomorrow, I'll show you who has power. \r"
   result:
     Yes: "I appreciate you visiting. You have my support!\r"
     No: 'Funny, I was actually thinking about voting for you before, but now there''s

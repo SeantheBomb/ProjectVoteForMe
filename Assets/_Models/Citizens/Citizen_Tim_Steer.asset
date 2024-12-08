@@ -22,7 +22,7 @@ MonoBehaviour:
     positive: "Intimidating\r"
     negative: "Casual\r"
     intro: "Oh let me guess, you want something from me. Hurry up, my men are waiting
-      for me on site. \r"
+      for me on the work site. \r"
     startingOpinion: 5
   proposals:
   - positive: "Deceptive\r"
@@ -31,11 +31,12 @@ MonoBehaviour:
       me what you fight for.\r"
     plusTwo: "You know something? I like the cut of your gib. I'm listening\r"
     zero: "Just get on with it. You clearly arn't ready to fight for anything.\r"
-    minusOne: "Your asking me? Your supposed to be the one with the ideas. \r"
+    minusOne: "Your asking me? Your supposed to be the one with the ideas. What do
+      you fight for?\r"
     minusTwo: "Flapping your lips with nothing to say. Just like a politician. \r"
   - positive: "School\r"
     negative: "Hospital\r"
-    plusOne: "Schools are always a good investment. \r"
+    plusOne: "Schools are always a good investment. But do you mean business?\r"
     plusTwo: "You've been paying attention I see. Kids need somewhere to go to keep
       them out of trouble. \r"
     zero: "You don't seem so sure. \r"
@@ -56,7 +57,7 @@ MonoBehaviour:
     plusOne: "Well. You atleast seem better than the other guy. \r"
     plusTwo: "Our city needs the strong to take charge. Keep it up. \r"
     zero: "Are you done yet?\r"
-    minusOne: "An honest politicion? Oh that's rich. \r"
+    minusOne: "An honest politician? Oh that's rich. \r"
     minusTwo: "Well, you weren't honest about being quick, were you?\r"
   result:
     Yes: "I've heard all I need. You've got my vote, and my union as well. Good luck.
