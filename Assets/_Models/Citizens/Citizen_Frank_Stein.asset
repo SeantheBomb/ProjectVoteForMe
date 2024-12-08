@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Frank Stein\r"
-    portrait: Slime
+    portrait: "Slime\r"
     avater: "\r"
     description: "Slime Monster\r"
     dossier: "25 year old slime mutant, created in lab accident, scares small children,
@@ -23,7 +23,8 @@ MonoBehaviour:
     positive: "Humerous\r"
     negative: "Intimidating\r"
     intro: "Oh hello there! What brings you down to my happy little home? Are you
-      here to be my friend!?\r"
+      here to be my friend!? [/N] I really appreciate it. Most of my neighbors are
+      too scared of me to visit.\r"
     startingOpinion: 5
   proposals:
   - positive: "Deceptive\r"

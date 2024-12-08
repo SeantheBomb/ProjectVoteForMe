@@ -14,15 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Tiffany Bloute\r"
-    portrait: "\rTikTokGirl"
+    portrait: "TikTokGirl\r"
     avater: "\r"
     description: "Tik Tok Kid\r"
-    dossier: "18 Years old, recent registered to vote.\r"
+    dossier: "18 Years old, recently registered to vote.\r"
   sentiment:
     positive: "Casual\r"
     negative: "Professional\r"
-    intro: "Oh are you here for my Mom? She's not in right now. Oh wait, you're that
-      dude from those posters! I just turned 18, I'm old enough to vote! \r"
+    intro: "Oh are you here for my Mom? She's not in right now. [/N] Oh wait, you're
+      that dude from those posters! [Name] right? I just turned 18, I'm old enough
+      to vote! \r"
     startingOpinion: 6
   proposals:
   - positive: "Headliner\r"
@@ -30,7 +31,8 @@ MonoBehaviour:
     plusOne: "Yeah I was just watching a video about that online. \r"
     plusTwo: "Woah, yeah I was just watcing a video about that online! Did you see
       the one about that robber who stole a baby in a break in? \r"
-    zero: "Oh. I don't know anything about that. \r"
+    zero: "Oh. I don't know anything about that. [/N] Can we be quick, My Mom says
+      its dangerous to stay outside this late. \r"
     minusOne: "Uh - hu. Hey, actually... I left my phone inside. Is there anything
       else?\r"
     minusTwo: "Can I be honest with you mister? You're more boring then I expected.
@@ -57,7 +59,8 @@ MonoBehaviour:
   - positive: "Smart\r"
     negative: "Honest\r"
     plusOne: "Okay cool. Wanna trade socials?\r"
-    plusTwo: "You know, I like listening to you talk. Can we trade socials?\r"
+    plusTwo: "You know, I like listening to you talk. Can we trade socials? Your
+      handle is @[Name] right?\r"
     zero: "Yeah, sure. Are you done?\r"
     minusOne: "I mean, lets be real here. Is honesty really how you get ahead in
       politics?\r"

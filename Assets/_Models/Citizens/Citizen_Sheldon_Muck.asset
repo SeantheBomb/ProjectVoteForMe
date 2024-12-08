@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Sheldon Muck\r"
-    portrait: SomeSchmuckl
+    portrait: "SomeSchmuckl\r"
     avater: "\r"
     description: "Shmuck\r"
-    dossier: "Age 29, Average. Nothing special to report.\r"
+    dossier: "Age 29, Average. Sick Grandman. Nothing special to report.\r"
   sentiment:
     positive: "Humerous\r"
     negative: "Intimidating\r"

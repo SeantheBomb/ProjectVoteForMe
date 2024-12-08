@@ -173,7 +173,7 @@ public class CanvasDialogController : MonoBehaviour
         display.title = citizen.bio.name;
         display.portrait = citizen.bio.portrait;
         display.isPlayer = false;
-        display.dialog = dialog.Replace("[Name]", GameManager.CurrentSession.playerName).Split("[/n]");
+        display.dialog = dialog.Replace("[Name]", GameManager.CurrentSession.playerName).Split("[/N]");
         display.sentiment = sentiment;
         return display;
     }

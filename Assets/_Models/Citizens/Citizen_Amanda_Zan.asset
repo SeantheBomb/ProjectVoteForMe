@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Amanda Zan\r"
-    portrait: Shoppaholic
+    portrait: "Shoppaholic\r"
     avater: "\r"
     description: "Shopaholic\r"
-    dossier: "Outstanding credit card debts on 4 cards.\r"
+    dossier: "Outstanding credit card debts on 4 cards, current on taxes\r"
   sentiment:
     positive: "Humerous\r"
     negative: "Professional\r"
@@ -38,7 +38,7 @@ MonoBehaviour:
     negative: "Prison\r"
     plusOne: "No way! A new Mall would be super fun. The old one's getting kind of
       crusty.\r"
-    plusTwo: "Oh my god, you get me. \r"
+    plusTwo: "Oh my god, you get me. Maybe we could go to that Mall together?\r"
     zero: "Okay but like... wouldn't it be better to put in something fun?\r"
     minusOne: "Ew, no, who would want that?\r"
     minusTwo: "Gross. Prisons are super ugly.\r"

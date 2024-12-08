@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Bob Bones\r"
-    portrait: ConspiracyTheorist
+    portrait: "ConspiracyTheorist\r"
     avater: "\r"
     description: "Wild Conspiracy Theorist\r"
     dossier: "No governement records on file.\r"

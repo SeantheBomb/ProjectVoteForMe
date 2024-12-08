@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Robert Yarbrough\r"
-    portrait: Robot
+    portrait: "Robot\r"
     avater: "\r"
     description: "Robot \r"
     dossier: "Age 72, Wealthy inventor, no public appearances in recent months. \r"
   sentiment:
     positive: "Professional\r"
     negative: "Humerous\r"
-    intro: "Greetings! Thank you for visiting the Yarbrough Manor. Unfortunatly,
+    intro: "Greetings! Thank you for visiting the Yarbrough Manor. [/N] Unfortunatly,
       my master is resting for some time now, but I am programmed to speak on his
       behalf. How may I help you?\r"
     startingOpinion: 5

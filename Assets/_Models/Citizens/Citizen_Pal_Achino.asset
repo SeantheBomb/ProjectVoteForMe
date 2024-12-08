@@ -14,22 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Pal Achino\r"
-    portrait: MobBoss
+    portrait: "MobBoss\r"
     avater: "\r"
     description: "Mob Boss\r"
-    dossier: "Crime lord in major gang. \r"
+    dossier: "Crime lord in major gang. Bid on construction contract for Mall.\r"
   sentiment:
     positive: "Intimidating\r"
     negative: "Casual\r"
-    intro: "Ah yes. The Wanna be mayor. I take it your here to grovel for my support?\r"
+    intro: "Ah yes. The Wanna be mayor, [Name]. I take it your here to grovel for
+      my support?\r"
     startingOpinion: 5
   proposals:
   - positive: "Straightforward\r"
     negative: "Deceptive\r"
     plusOne: "Get on with your point then. \r"
     plusTwo: "Now that's the tone that gets things done. \r"
-    zero: "I'm afraid words arn't going to move me without credits to back them up.
-      \r"
+    zero: "I'm afraid words arn't going to move me without credits or fists to back
+      them up. \r"
     minusOne: "You seem to have confused me with an idiot. \r"
     minusTwo: "Why don't you straighten your back when you talk to your betters.
       \r"
@@ -37,8 +38,8 @@ MonoBehaviour:
     negative: "Prison\r"
     plusOne: "I'm happy to see someone's already talked to you about the Mall deal.
       \r"
-    plusTwo: "You don't need to put on a show on for me, kid. I know all about the
-      Mall deal. \r"
+    plusTwo: "You don't need to put on a show for me, kid. I know all about the Mall
+      deal. \r"
     zero: "At the end of the day, it dosen't matter what ya build, so long as you
       understand who's going to be building it. \r"
     minusOne: "I'm going to need you to kill the Prison deal. Lets just say the leaders
@@ -58,9 +59,9 @@ MonoBehaviour:
     plusOne: "Just remember who holds the real power. \r"
     plusTwo: "That's the spirit kid. But remember who holds the real power is always
       in the purse.\r"
-    zero: "That's cute. That's honestly, really cute.\r"
+    zero: "That's cute, kid. That's honestly, really cute.\r"
     minusOne: "Hah! Good luck with that kid. \r"
     minusTwo: "You really don't know what you're doing, do you?\r"
   result:
     Yes: "Color me convinced. Ill stuff a few extra votes in the box for ya. \r"
-    No: 'It''s not looking good for you, friend. Not looking good at all. '
+    No: 'It''s not looking good for you, [Name]. Not looking good at all. '

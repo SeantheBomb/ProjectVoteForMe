@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Conner Stone\r"
-    portrait: Stoner
+    portrait: "Stoner\r"
     avater: "\r"
     description: "Beanie, long hair, cyberpunk red LEDs across eyes\r"
-    dossier: "Slow witted stoner. \r"
+    dossier: "Slow witted stoner. Unemployed\r"
   sentiment:
     positive: "Humerous\r"
     negative: "Intimidating\r"
-    intro: Yo, are you the Pizza?
-    startingOpinion: 0
+    intro: "Yo, are you the Pizza?\r"
+    startingOpinion: 5
   proposals:
   - positive: "Headliner\r"
     negative: "Straightforward\r"
@@ -44,7 +44,7 @@ MonoBehaviour:
     minusTwo: "Woah, man. Are you like, with the Cops? Because I don't have anything
       that's not medicinal. \r"
   - positive: "Rich Raise\r"
-    negative: "Raise Everyone\r"
+    negative: "Everyone Raise\r"
     plusOne: "Hell yeah, fight the power, brother! But like, if I was ever rich I
       wouldn't need to pay taxes, right?\r"
     plusTwo: "Hilarious bro! And like, I get some of those taxes right?\r"

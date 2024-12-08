@@ -14,21 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Sally Sue\r"
-    portrait: Nurse
+    portrait: "Nurse\r"
     avater: "\r"
     description: "Nurse Hat and scrubs, Blonde Hair. \r"
     dossier: "Nurse at a retirement home.\r"
   sentiment:
-    positive: "Professional\r"
+    positive: "Profesional\r"
     negative: "Humerous\r"
-    intro: Oh, hi there. What can I help you with?
-    startingOpinion: 0
+    intro: "Oh, hi there. It's [Name], right? What can I help you with?\r"
+    startingOpinion: 5
   proposals:
   - positive: "Straightforward\r"
     negative: "Headliner\r"
-    plusOne: "Okay, tell me more.\r"
+    plusOne: "Okay, tell me more. But could you be more to the point?\r"
     plusTwo: "Thank you for visiting me. Please tell me what you stand for!\r"
-    zero: "Sure, I have a second. \r"
+    zero: "Sure, I have a second. Get to the point. \r"
     minusOne: "You better be quick. \r"
     minusTwo: "Get to the point or get off my doorstep. \r"
   - positive: "Hospital\r"
@@ -42,7 +42,7 @@ MonoBehaviour:
     minusTwo: "Do you think this is a joke? Our city NEEDS better healthcare, and
       you\u2019re joking around?\r"
   - positive: "Rich Raise\r"
-    negative: "Tax Same\r"
+    negative: "Same\r"
     plusOne: "Sounds about right to me.\r"
     plusTwo: "I\u2019m glad to see minds like yours running for office. Lets do it!\r"
     zero: "Are you done yet?\r"

@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Tim Steer\r"
-    portrait: UnionBoss
+    portrait: "UnionBoss\r"
     avater: "\r"
-    description: "Union Boss, not afraid to get his hands dirty\r"
+    description: "Union Boss, not afraid to get his hands dirty, Father of 5\r"
     dossier: "Union Boss\r"
   sentiment:
     positive: "Intimidating\r"
@@ -27,9 +27,10 @@ MonoBehaviour:
   proposals:
   - positive: "Deceptive\r"
     negative: "Question\r"
-    plusOne: "I've got a few until I gotta be at the work site, go ahead. \r"
+    plusOne: "I've got a few until I gotta be at the work site, go ahead. Just tell
+      me what you fight for.\r"
     plusTwo: "You know something? I like the cut of your gib. I'm listening\r"
-    zero: "Just get on with it. \r"
+    zero: "Just get on with it. You clearly arn't ready to fight for anything.\r"
     minusOne: "Your asking me? Your supposed to be the one with the ideas. \r"
     minusTwo: "Flapping your lips with nothing to say. Just like a politician. \r"
   - positive: "School\r"

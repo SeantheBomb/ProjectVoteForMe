@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Citizen_Norman_Nome
   m_EditorClassIdentifier: 
   bio:
-    name: "Norman Nome. \r"
-    portrait: NoGuy
+    name: "Norman Nome\r"
+    portrait: "NoGuy\r"
     avater: "\r"
     description: "No Man\r"
     dossier: "Current negligent on taxes, forms had \"no\" written into all fields.

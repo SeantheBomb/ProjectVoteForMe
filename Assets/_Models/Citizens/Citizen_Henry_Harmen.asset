@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Henry Harmen\r"
-    portrait: ThreateningMan
+    portrait: "ThreateningMan\r"
     avater: "\r"
     description: "Big, threatening \r"
-    dossier: "Father of 2, Construction worker, no voting history\r"
+    dossier: "Father of 2, Construction worker, no voting history, extensive criminal
+      record\r"
   sentiment:
     positive: "Casual\r"
     negative: "Intimidating\r"
@@ -29,7 +30,7 @@ MonoBehaviour:
     plusOne: "Do you really wan't to know what I think? Huh, that's new. I need to
       feed my kids though, so can you be quick?\r"
     plusTwo: "Huh, that's a really good question! I don't know. I need to feed my
-      kids though, so can you be quick?\r"
+      kids, so can you be quick?\r"
     zero: "No. And tell your people to stop calling me. \r"
     minusOne: "Don't you have better things to do? Get out of here. \r"
     minusTwo: "I wan't to make something clear to you. I am very armed.\r"

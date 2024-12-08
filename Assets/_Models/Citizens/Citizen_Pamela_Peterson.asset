@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Pamela Peterson\r"
-    portrait: OldWoman
+    portrait: "OldWoman\r"
     avater: "\r"
     description: "Old senile woman who thinks the player is her nephew. \r"
     dossier: "87 Year old woman, retired. No known affiliations. \r"
@@ -50,11 +50,11 @@ MonoBehaviour:
       in decades. \r"
     plusTwo: "Yes please! I havn't bothered with those taxes in years and would LOVE
       to keep it that way. \r"
-    zero: "What's that? Did you say you needed some money? Now you know I only give
-      you money on your Birthday and Christmas.\r"
+    zero: "What's that? Did you say you needed some money? [/N] Now you know I only
+      give you money on your Birthday and Christmas.\r"
     minusOne: "I don't know about all of that...\r"
-    minusTwo: "Your father taught you to talk like that, didn't he? I always said
-      he was a bad influence, biggest mistake of your Mom's life. \r"
+    minusTwo: "Your father taught you to talk like that, didn't he? [/N] I always
+      said he was a bad influence, biggest mistake of your Mom's life. \r"
   - positive: "Honest\r"
     negative: "Kind\r"
     plusOne: "Won't you come in and relax? Why are we talking out here?\r"

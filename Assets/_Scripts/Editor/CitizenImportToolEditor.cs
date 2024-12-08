@@ -325,6 +325,7 @@ public class CitizenImportToolEditor : EditorWindow
             {
                 CitizenObject original = AssetDatabase.LoadAssetAtPath<CitizenObject>(assetPath);
                 UpdateCitizen(ref original, citizen);
+                EditorUtility.SetDirty(original);
                 citizen = original;
                 break;
             }

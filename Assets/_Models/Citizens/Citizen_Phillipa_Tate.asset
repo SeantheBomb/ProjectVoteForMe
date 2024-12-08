@@ -14,22 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Phillipa Tate\r"
-    portrait: Teacher
+    portrait: "Teacher\r"
     avater: "\r"
     description: "School Teacher\r"
     dossier: "59 Year old Elementary school teacher, taught you.\r"
   sentiment:
     positive: "Professional\r"
     negative: "Humerous\r"
-    intro: "Oh my goodness look who's all grown! I still remember you from my 2nd
-      grade class. \r"
+    intro: "Oh my goodness look who's all grown! How are you, [Name]? [/N] I still
+      remember you from my 2nd grade class. Such a sweet and serious boy.\r"
     startingOpinion: 7
   proposals:
   - positive: "Question\r"
     negative: "Headliner\r"
     plusOne: "The smartest person in the room is the one asking the most questions.\r"
-    plusTwo: "I think you'd make a good Mayor. Like I told you when you were young,
-      the smartest person in the room is the one asking the most questions.\r"
+    plusTwo: "I think you'd make a great Mayor! [/N] Like I told you when you were
+      young, the smartest person in the room is the one asking the most questions.\r"
     zero: "It's good to see you sweetie, so you want to be Mayor?\r"
     minusOne: "I encourage you to look deeper than the headlines if you want to be
       mayor, sweetie. \r"

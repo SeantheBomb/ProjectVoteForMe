@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Richard Filsh\r"
-    portrait: "\rFilthyRich"
+    portrait: "FilthyRich\r"
     avater: "\r"
     description: "Filthy Rich Man\r"
     dossier: "55 Year old entreprenuer, Multiple business owner, children in private
@@ -64,4 +64,5 @@ MonoBehaviour:
     Yes: "Thank you for stopping by. I feel much better in my investment now. Together,
       we're going to accomplish some great things. \r"
     No: 'I''m glad you stopped by, because now I know for sure that you are the wrong
-      choice. I''ll expect my donations returned to my office by Monday. '
+      choice. [/N] I''ll expect my donations returned to my office by Monday, or
+      there will be... consequences. '

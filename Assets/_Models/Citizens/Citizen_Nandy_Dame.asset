@@ -14,29 +14,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Nandy Dame\r"
-    portrait: "\rNIMBY"
+    portrait: "NIMBY\r"
     avater: "\r"
     description: "Rich NIMBY Lady\r"
     dossier: "Member of 5 Social Clubs, Regular speaker at monthly town hall.\r"
   sentiment:
     positive: "Professional\r"
     negative: "Casual\r"
-    intro: "Oh! Are you the one running for mayor? I'm so glad you stopped by, I
-      have a lot of suggestions for you regarding this terrible crime wave.  \r"
+    intro: "Oh! Are you the one running for mayor? Mr. [Name] if I recall. [/N] I'm
+      so glad you stopped by, I have a lot of suggestions for you regarding this
+      terrible crime wave.  \r"
     startingOpinion: 5
   proposals:
   - positive: "Question \r"
     negative: "Deception\r"
     plusOne: "If you wan't to know what I think, the defining issue of this election
-      is crime. \r"
+      is crime, Mr. [Name].\r"
     plusTwo: "It's about time someone at City Hall understood how much perspective
-      I have to offer! Together, we can address the real threats to this city.\r"
-    zero: "Can we focus on the most imporant issue? What are you going to do to clean
-      these punks off our streets?\r"
-    minusOne: "Oh no you don't, I've done my homework. You're talking to an informed
-      voter, who knows the important issues. \r"
-    minusTwo: "Do you take this flippant tone with all voters? Or just the important
-      ones?\r"
+      I have to offer! [/N] You and me, Mr. [Name], we can address the real threats
+      to this city.\r"
+    zero: "Can we focus on the most imporant issue, Mr. [Name]? What are you going
+      to do to clean these punks off our streets?\r"
+    minusOne: "Oh no you don't, I've done my homework, Mr. [Name]. You're talking
+      to an informed voter, who knows the important issues. \r"
+    minusTwo: "Do you take this flippant tone with all voters, Mr. [Name]? Or just
+      the important ones?\r"
   - positive: "Prison\r"
     negative: "Hospital\r"
     plusOne: "My thought's exactly, infact I just heard that the other prison is
@@ -66,7 +68,7 @@ MonoBehaviour:
     minusTwo: "If you think that's how you take office, I think you have another
       thing coming.\r"
   result:
-    Yes: "Thank you for talking the issues with me. I look forward to seeing you
-      in City Hall!\r"
+    Yes: "Thank you for talking the issues with me, Mr. [Name]. I look forward to
+      seeing you in City Hall!\r"
     No: 'I hope you didn''t quit your job to do this, because you are clearly wasting
       your time. '

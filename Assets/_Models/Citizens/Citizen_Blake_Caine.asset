@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bio:
     name: "Blake Caine\r"
-    portrait: "\rCryptoGuy"
+    portrait: "CryptoGuy\r"
     avater: "\r"
     description: "Crypto Nerd\r"
     dossier: "23 Years Old, multiple outstanding debts.\r"
@@ -35,8 +35,8 @@ MonoBehaviour:
       investment opportunity?\r"
     minusOne: "That's not important. While I have you, would you like to invest in
       this new crypto coin I'm working on?\r"
-    minusTwo: "It  seems you only see the surface level of things. Do you really
-      think that will get you far?\r"
+    minusTwo: "It seems you only see the surface level of things. Do you really think
+      that will get you far?\r"
   - positive: "Mall\r"
     negative: "Prison\r"
     plusOne: "I'll vote for your mall, but you need to scratch my back. Do you think
