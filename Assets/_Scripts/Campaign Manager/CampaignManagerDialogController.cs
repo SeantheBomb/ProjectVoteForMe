@@ -26,9 +26,9 @@ public class CampaignManagerDialogController : MonoBehaviour
         else
         {
             var interstitial = manager.interstitials[GameManager.CurrentSession.CurrentLevelIndex];
-            var report = macro.GetTotalResults();
-            bool isWinning = report.playerTally > report.opposingTally;
-            string[] output = isWinning ? interstitial.winningDialog : interstitial.losingDialog;
+            //var report = macro.GetTotalResults();
+            //bool isWinning = report.playerTally > report.opposingTally;
+            string[] output = macro.IsWinning() ? interstitial.winningDialog : interstitial.losingDialog;
             StartCoroutine(Display(output));
         }
     }

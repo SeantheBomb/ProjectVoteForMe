@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MacroMenuController : MonoBehaviour
@@ -54,6 +55,12 @@ public class MacroMenuController : MonoBehaviour
     public void GoToMainMenu()
     {
         SceneLoader.LoadMainMenu();
+    }
+
+    public bool IsWinning()
+    {
+        var report = GetTotalResults();
+        return report.playerTally > report.opposingTally;
     }
 }
 

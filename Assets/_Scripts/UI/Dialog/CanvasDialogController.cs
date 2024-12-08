@@ -93,6 +93,7 @@ public class CanvasDialogController : MonoBehaviour
 
         }
         sessions.Add(citizen, session);
+        OnDialogueFavor?.Invoke(session.IsFavored() ? 1 : -1);
         dialogDisplay.Show(GenerateDisplay(citizen, session.IsFavored() ? citizen.result.Yes : citizen.result.No));
         yield return new WaitUntil(()=>dialogDisplay.IsComplete);
         Complete(session);

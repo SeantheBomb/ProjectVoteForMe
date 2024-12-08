@@ -11,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
     MoveDirection direction;
     bool moveInput;
 
+    public AudioClip walkingSFX;
+    public AudioSource audioSource;
+
     Animator animator;
     Rigidbody2D rb;
 
@@ -20,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     {
         animator = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponentInChildren<AudioSource>();
         ValidatePosition();
     }
 
@@ -29,7 +33,8 @@ public class PlayerMovement : MonoBehaviour
         if (isMoving)
             return;
 
-        moveInput = true;
+        bool moveThisFrame = true;
+
         if(Input.GetKey(KeyCode.W))
         {
             StartCoroutine(Move(MoveDirection.Up));
@@ -48,8 +53,17 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            moveInput = false;
+            moveThisFrame = false;
         }
+
+        if(moveThisFrame != moveInput)
+        {
+            if(moveThisFrame)
+                audioSource.Play();
+            else 
+                audioSource.Stop();
+        }
+        moveInput = moveThisFrame;
     }
 
     private void LateUpdate()
