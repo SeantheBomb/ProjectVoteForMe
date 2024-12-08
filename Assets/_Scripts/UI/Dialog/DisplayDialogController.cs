@@ -67,8 +67,9 @@ public class DisplayDialogController : MonoBehaviour
             {
                 if (isAcknowledged)
                 {
-                    Complete();
-                    yield break;
+                    SkipTextScroll(d);
+                    isAcknowledged=false;
+                    break;
                 }
                 text.text += c;
                 switch (c)
@@ -93,6 +94,11 @@ public class DisplayDialogController : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
         Complete();
+    }
+
+    public void SkipTextScroll(string dialog)
+    {
+        text.text = dialog;
     }
 
     public Sprite GetSentiment(int sentiment)
