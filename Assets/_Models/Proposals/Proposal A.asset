@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: Proposal A
   m_EditorClassIdentifier: 
   id: Introduction
-  header: Introduction
+  header: Intro with...
   options:
   - id: Straightforward
     title: Straightforward
     dialogs: []
   - id: Deceptive
-    title: Deceptive
+    title: Deception
     dialogs: []
   - id: Headliner
-    title: Headliner
+    title: Headline
     dialogs: []
   - id: Question
     title: Question

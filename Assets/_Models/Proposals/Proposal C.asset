@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: Proposal C
   m_EditorClassIdentifier: 
   id: Tax
-  header: Tax
+  header: Taxes should...
   options:
   - id: Rich Raise
-    title: Rich Raise
+    title: Raised on Rich
     dialogs: []
   - id: Rich Lower
-    title: Rich Lower
+    title: Lowered on Rich
     dialogs: []
   - id: Raise Everyone
-    title: Raise Everyone
+    title: Raised for All
     dialogs: []
   - id: Tax Same
-    title: Tax Same
+    title: Kept the Same
     dialogs: []

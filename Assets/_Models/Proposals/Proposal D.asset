@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Proposal D
   m_EditorClassIdentifier: 
   id: Closing
-  header: Closing
+  header: I am...
   options:
   - id: Honest
     title: Honest

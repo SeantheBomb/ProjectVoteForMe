@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Proposal B
   m_EditorClassIdentifier: 
   id: Renovation
-  header: Renovation
+  header: I will build a...
   options:
   - id: School
     title: School
