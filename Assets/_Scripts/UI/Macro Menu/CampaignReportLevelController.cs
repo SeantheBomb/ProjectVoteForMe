@@ -10,6 +10,13 @@ public class CampaignReportLevelController : MonoBehaviour
 
     MacroMenuController macro;
 
+    public string[] townNames = new string[]
+    {
+        "Midtown",
+        "Glitter Heights",
+        "Ooze Bluffs"
+    };
+
     private void Start()
     {
         chart = GetComponentInChildren<E2Chart>();
@@ -30,18 +37,20 @@ public class CampaignReportLevelController : MonoBehaviour
         {
             name = "Player Tally",
             dataX = new List<float>(),
-            dataY = new List<float>()
+            dataY = new List<float>(),
         };
         var opposing = new E2ChartData.Series()
         {
             name = "Opposing Tally",
             dataX = new List<float>(),
-            dataY = new List<float>()
+            dataY = new List<float>(),
         };
 
         data.series.Clear();
         data.series.Add(player);
         data.series.Add(opposing);
+
+        data.categoriesX = new List<string>();
 
 
         for (int i = 0; i < results.Length; i++)
@@ -52,6 +61,8 @@ public class CampaignReportLevelController : MonoBehaviour
 
             opposing.dataX.Add(i);
             opposing.dataY.Add(r.opposingTally);
+
+            data.categoriesX.Add(townNames[i]);
         }
         chart.UpdateChart();
     }
