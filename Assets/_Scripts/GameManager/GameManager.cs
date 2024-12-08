@@ -25,8 +25,8 @@ public class GameManager
     {
         get
         {
-            if(Instance._currentSession == null)
-                Instance._currentSession = new GameSession();
+            if (Instance._currentSession == null)
+                Instance.CreateSession();
             return Instance._currentSession;
         }
     }
@@ -45,9 +45,9 @@ public class GameManager
         }
     }
 
-    public void CreateSession()
+    public void CreateSession(string playerName = "Punk Politico")
     {
-        _currentSession = new GameSession();
+        _currentSession = new GameSession(playerName);
     }
 
     //public void Load()
@@ -100,6 +100,8 @@ public class GameSession
     public List<LevelSession> levelSessions;
     public List<ProposalHistory> proposalHistory;
 
+    public string playerName;
+
     int _currentLevelIndex = -1;
     public LevelSession CurrentLevel
     {
@@ -121,7 +123,7 @@ public class GameSession
 
     //public int saveSlot;
 
-    public GameSession()
+    public GameSession(string playerName)
     {
         levelSessions = new List<LevelSession>();
         proposalHistory = new List<ProposalHistory>();
